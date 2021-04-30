@@ -1,0 +1,126 @@
+version: "3"
+
+services:
+  web-api-gateway:
+    image: "web-api-gateway"
+    build:
+      dockerfile: "./packages/web-app/Dockerfile"
+      context: "."
+    depends_on:
+      - "service-identity"
+    networks:
+      - "frontend"
+      - "backend"
+    ports:
+      - "3100"
+    environment:
+      NODE_ENV: "test"
+      PORT: "3100"
+    restart: "on-failure"
+
+  web-app:
+    image: "web-app"
+    build:
+      dockerfile: "./packages/web-app/Dockerfile"
+      context: "."
+    networks:
+      - "frontend"
+    ports:
+      - "3000"
+    depends_on:
+      - "web-api-gateway"
+    environment:
+      PORT: "3000"
+    restart: "on-failure"
+
+  web-landing:
+    image: "web-landing"
+    build:
+      dockerfile: "./packages/web-landing/Dockerfile"
+      context: "."
+    networks:
+      - "frontend"
+    ports:
+      - "3001"
+    environment:
+      PORT: "3001"
+      NGINX_PORT: "3001"
+    restart: "on-failure"
+
+  web-server:
+    image: "web-server"
+    build:
+      context: "./packages/web-server"
+    networks:
+      - "frontend"
+    ports:
+      - "80:80"
+    depends_on:
+      - "web-api-gateway"
+      - "web-app"
+    environment:
+      PORT: "80"
+    restart: "on-failure"
+
+  service-identity:
+    image: "service-identity"
+    build:
+      dockerfile: "./packages/service-identity/Dockerfile"
+      context: "."
+    networks:
+      - "backend"
+    ports:
+      - "51201"
+    environment:
+      NODE_ENV: "test"
+      URL: "0.0.0.0"
+      PORT: "51201"
+    restart: "on-failure"
+
+  # service-user:
+  #   image: "service-user"
+  #   build:
+  #     context: "./packages/service-user"
+  #   networks:
+  #     - "backend"
+  #   ports:
+  #     - "51202"
+  #   environment:
+  #     NODE_ENV: "test"
+  #     URL: "0.0.0.0"
+  #     PORT: "51202"
+  #   restart: "on-failure"
+
+  mongo:
+    image: mongo
+    restart: always
+    networks:
+      - "backend"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
+  
+  redis:
+    image: "redis:alpine"
+    command: redis-server --requirepass admin_password
+    ports:
+      - "6379:6379"
+    networks:
+      - "backend"
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    networks:
+      - "backend"
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+
+networks:
+  frontend:
+  backend:
+    internal: false

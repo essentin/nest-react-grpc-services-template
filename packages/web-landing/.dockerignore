@@ -1,0 +1,7 @@
+.gitignore
+.next
+node_modules
+README
+nginx.conf
+Dockerfile
+yarn.lock

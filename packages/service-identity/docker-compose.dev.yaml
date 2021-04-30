@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  service-identity:
+    image: 'service-identity:dev'
+    build:
+      dockerfile: "./packages/service-identity/dev.Dockerfile"
+    volumes:
+      - './packages/service-identity:/packages/service'
+      - './node_modules:/node_modules'
+    command: npm run start:dev

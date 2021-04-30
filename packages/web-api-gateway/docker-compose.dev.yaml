@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web-api-gateway:
+    image: "web-api-gateway:dev"
+    build:
+      dockerfile: "./packages/web-api-gateway/dev.Dockerfile"
+    volumes:
+      - "./packages/web-api-gateway:/packages/service"
+      - './node_modules:/node_modules'
+    command: npm run start:dev

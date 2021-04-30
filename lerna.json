@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "packages/*",
+    "libs/*",
+    "mrb"
+  ],
+  "version": "independent",
+  "npmClient": "yarn"
+}

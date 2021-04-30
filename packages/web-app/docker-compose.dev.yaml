@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web-app:
+    image: "web-app:dev"
+    build:
+       dockerfile: "./packages/web-app/dev.Dockerfile"
+    volumes:
+      - "./packages/web-app:/packages/service"
+      - './node_modules:/node_modules'
+    command: npm run dev

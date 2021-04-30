@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package identity;
+
+import "common.proto";
+
+
+service IdentityService {
+  rpc login(common.EmailParam) returns (stream Jwt);
+  rpc authenticate(TokenParam) returns (stream Jwt);
+}
+
+message TokenParam {
+  string authToken = 1;
+}
+
+message Jwt  {
+  string jwt = 1;
+}

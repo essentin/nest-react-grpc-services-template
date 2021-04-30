@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web-landing:
+    image: "web-landing:dev"
+    build:
+      dockerfile: "./packages/web-landing/dev.Dockerfile"
+    volumes:
+      - "./packages/web-landing:/packages/service"
+      - './node_modules:/node_modules'
+    command: npm run start

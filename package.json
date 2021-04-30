@@ -1,0 +1,36 @@
+{
+  "name": "sgram-io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./_scripts/lint.sh",
+    "docker:build": "docker-compose build --parallel",
+    "docker:start": "docker-compose up",
+    "docker:teardown": "docker-compose down -v",
+    "package-lock": "lerna exec npm i --package-lock-only",
+    "rebuild-bin": "docker run --rm -it --name builder-container -v ${PWD}:/repo:cached node-builder lerna exec \"npm rebuild\" --parallel",
+    "start": "./_scripts/start.sh",
+    "dev": "./_scripts/dev.sh",
+    "repo:status": "oao status",
+    "repo:build": "./mrb/bin/run npm run build",
+    "repo:install": "lerna bootstrap --ignore-scripts  && npm run rebuild-bin",
+    "repo:build-libs": "lerna run --scope lib-* build",
+    "repo:clean": "oao clean"
+  },
+  "private": true,
+ 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomsa/sgram-io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomsa/sgram-io/issues"
+  },
+  "homepage": "https://github.com/thomsa/sgram-io#readme",
+  "dependencies": {
+    "sharp": "^0.27.2"
+  }
+}

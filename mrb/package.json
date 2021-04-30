@@ -1,0 +1,63 @@
+{
+  "name": "mrb",
+  "description": "Monorepo Builder",
+  "version": "0.0.1",
+  "author": "Tamas Lorincz @thomsa",
+  "bin": {
+    "mrb": "./bin/run"
+  },
+  "bugs": "https://github.com/thomsa/mrb/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "@types/fs-extra": "^9.0.8",
+    "cli-ux": "^5.5.1",
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "graph-data-structure": "^1.13.0",
+    "listr": "^0.14.3",
+    "tree-model": "^1.0.7",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/test": "^1",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "chai": "^4",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "mocha": "^5",
+    "nyc": "^14",
+    "prettier": "^2.2.1",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/thomsa/mrb",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "mrb"
+  },
+  "repository": "thomsa/mrb",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
