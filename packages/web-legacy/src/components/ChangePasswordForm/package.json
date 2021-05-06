@@ -1,6 +1,0 @@
-{
-  "name": "ChangePasswordForm",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./ChangePasswordForm.js"
-}

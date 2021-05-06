@@ -1,6 +1,0 @@
-{
-    "name": "InstantBook",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./InstantBook.js"
-}

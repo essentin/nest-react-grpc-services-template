@@ -1,6 +1,0 @@
-{
-  "name": "ReservationManagement",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./ReservationManagement.js"
-}

@@ -1,8 +1,0 @@
-query editAdminReview ($reviewId: Int!) {
-    editAdminReview (reviewId: $reviewId) {
-        id
-        listId
-        reviewContent
-        rating
-    }
-}

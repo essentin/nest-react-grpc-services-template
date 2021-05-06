@@ -1,7 +1,0 @@
-{
-  getUserDashboard{
-    totalCount
-    todayCount
-    monthCount
-  }
-}

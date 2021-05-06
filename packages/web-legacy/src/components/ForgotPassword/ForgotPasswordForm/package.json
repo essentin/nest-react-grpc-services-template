@@ -1,6 +1,0 @@
-{
-  "name": "ForgotPasswordForm",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./ForgotPasswordForm.js"
-}

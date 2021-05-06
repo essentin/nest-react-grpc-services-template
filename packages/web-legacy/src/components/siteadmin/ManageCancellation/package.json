@@ -1,6 +1,0 @@
-{
-    "name": "ManageCancellation",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./ManageCancellation.js"
-}

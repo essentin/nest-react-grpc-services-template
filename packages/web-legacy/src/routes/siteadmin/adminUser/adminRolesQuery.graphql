@@ -1,6 +1,0 @@
-query {
-  getAllAdminRoles {
-    id
-    name
-  }
-}

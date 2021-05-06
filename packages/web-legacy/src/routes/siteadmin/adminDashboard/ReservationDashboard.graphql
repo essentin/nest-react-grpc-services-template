@@ -1,7 +1,0 @@
-{
-  getReservationDashboard{
-    totalCount
-    todayCount
-    monthCount
-  }
-}

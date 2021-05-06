@@ -1,7 +1,0 @@
-{
-  "rules": {
-    "no-console": "off",
-    "global-require": "off",
-    "react/prop-types": "off"
-  }
-}
