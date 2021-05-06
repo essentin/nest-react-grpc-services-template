@@ -1,11 +1,13 @@
 /* eslint-disable */
-import { GrpcMethod, GrpcStreamMethod } from "@nestjs/microservices";
-import { Observable } from "rxjs";
-import { Timestamp } from "./google/protobuf/timestamp";
-import { IdParam, EmailParam } from "./common";
-import { Empty } from "./google/protobuf/empty";
+import { GrpcMethod, GrpcStreamMethod } from '@nestjs/microservices';
+import { util, configure } from 'protobufjs/minimal';
+import * as Long from 'long';
+import { Observable } from 'rxjs';
+import { Timestamp } from './google/protobuf/timestamp';
+import { IdParam, EmailParam } from './common';
+import { Empty } from './google/protobuf/empty';
 
-export const protobufPackage = "users";
+export const protobufPackage = 'users';
 
 export interface SetParams {
   firstName: string;
@@ -26,7 +28,7 @@ export interface Users {
   data: Users[];
 }
 
-export const USERS_PACKAGE_NAME = "users";
+export const USERS_PACKAGE_NAME = 'users';
 
 export interface UserServiceClient {
   findOne(request: IdParam): Observable<User>;
@@ -50,31 +52,38 @@ export interface UserServiceController {
 
 export function UserServiceControllerMethods() {
   return function (constructor: Function) {
-    const grpcMethods: string[] = ["findOne", "getAll", "findByEmail", "set"];
+    const grpcMethods: string[] = ['findOne', 'getAll', 'findByEmail', 'set'];
     for (const method of grpcMethods) {
       const descriptor: any = Reflect.getOwnPropertyDescriptor(
         constructor.prototype,
-        method
+        method,
       );
-      GrpcMethod("UserService", method)(
+      GrpcMethod('UserService', method)(
         constructor.prototype[method],
         method,
-        descriptor
+        descriptor,
       );
     }
     const grpcStreamMethods: string[] = [];
     for (const method of grpcStreamMethods) {
       const descriptor: any = Reflect.getOwnPropertyDescriptor(
         constructor.prototype,
-        method
+        method,
       );
-      GrpcStreamMethod("UserService", method)(
+      GrpcStreamMethod('UserService', method)(
         constructor.prototype[method],
         method,
-        descriptor
+        descriptor,
       );
     }
   };
 }
 
-export const USER_SERVICE_NAME = "UserService";
+export const USER_SERVICE_NAME = 'UserService';
+
+// If you get a compile-error about 'Constructor<Long> and ... have no overlap',
+// add '--ts_proto_opt=esModuleInterop=true' as a flag when calling 'protoc'.
+if (util.Long !== Long) {
+  util.Long = Long as any;
+  configure();
+}

@@ -1,0 +1,6 @@
+{
+  "name": "BookingModal",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BookingModal.js"
+}

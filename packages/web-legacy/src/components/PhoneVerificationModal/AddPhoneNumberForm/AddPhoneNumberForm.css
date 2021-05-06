@@ -1,0 +1,82 @@
+@import '../../utils.css';
+
+/** RentAll - Begin **/
+.select {
+  position: relative;
+  background-image: url('../../../../public//NewIcon/ic-country.svg') !important;
+  background-position: 100% 8px;
+  background-size: 27px 17px !important;
+  background-repeat: no-repeat;
+  left: -11px;
+}
+.phoneBg {
+  position: relative;
+  background-image: url('../../../../public//NewIcon/noun-phone.svg') !important;
+  background-position: 99% 3px;
+  background-size: 38px 23px !important;
+  background-repeat: no-repeat;
+}
+.formGroup {
+  margin-bottom: 0px !important;
+}
+.space3 {
+  margin-bottom: 18px;
+}
+.spaceTop1 {
+  margin-top: 6px;
+}
+.labelText {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #131313;
+  margin: 6px 0px;
+}
+.btnPrimary {
+  border-color: #f56e9f !important;
+  background-color: #f56e9f !important;
+  color: #fff !important;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 36px;
+  margin-top: 30px;
+  padding: 8px 23px;
+  box-shadow: none !important;
+  margin-right: 15px;
+}
+.btnPrimary:hover,
+.btnPrimary:focus,
+.btnPrimary:disabled:hover,
+.btnPrimary:disabled:focus {
+  border-color: #f64e70 !important;
+  background-color: #f64e70 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.horizontalLineThrough {
+  margin: 6px 0px 6px;
+}
+.formGroup .input-group-addon,
+.inputGroupAddon {
+  border: 1px solid #d0d0d0;
+}
+.formContainer {
+  border: 1px solid #d0d0d0;
+  padding: 15px;
+  border-radius: 0px;
+}
+.logInModalBody {
+  padding: 0px;
+}
+.mainPadding {
+  padding: 0 10px 0px 30px;
+}

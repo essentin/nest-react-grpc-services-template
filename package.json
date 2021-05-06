@@ -14,23 +14,19 @@
     "dev": "./_scripts/dev.sh",
     "repo:status": "oao status",
     "repo:build": "./mrb/bin/run npm run build",
-    "repo:install": "lerna bootstrap --ignore-scripts  && npm run rebuild-bin",
+    "repo:install": "lerna bootstrap --ignore-scripts --force-local && lerna link --force-local && npm run rebuild-bin",
     "repo:build-libs": "lerna run --scope lib-* build",
     "repo:clean": "oao clean"
   },
   "private": true,
- 
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thomsa/sgram-io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thomsa/sgram-io/issues"
-  },
-  "homepage": "https://github.com/thomsa/sgram-io#readme",
-  "dependencies": {
-    "sharp": "^0.27.2"
+  "workspaces": [
+    "packages/*",
+    "libs/*",
+    "mrb"
+  ],
+  "devDependencies": {
+    "oao": "^2.0.2",
+    "prettier": "^2.2.1",
+    "webpack": "^5.36.2"
   }
 }

@@ -1,0 +1,8 @@
+@import '../../components/variables.css';
+.root {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.container {
+  max-width: 100%;
+}

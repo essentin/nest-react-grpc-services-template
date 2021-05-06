@@ -1,0 +1,174 @@
+@import '../../../components/variables.css';
+@import '../../../components/utils.css';
+@import '../../../components/common.css';
+
+/** RentAll - Begin **/
+.formGroup {
+  margin-bottom: 16px;
+  position: relative;
+}
+.formControlInput {
+  padding: 0px 35px 0px 2px;
+  height: 34px;
+  border-radius: 0px;
+  font-size: 16px;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.formSection {
+  overflow: hidden;
+}
+.noPadding {
+  padding: 0px;
+}
+.textAlignRight {
+  text-align: right;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.modalCaptionLink {
+  color: #f56e9f;
+}
+.modalCaptionLinkLarge {
+  font-size: 16px;
+  line-height: 32px;
+}
+.modalCaptionLink:hover,
+.modalCaptionLink:focus {
+  color: #f56e9f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 13px 21px;
+  width: 100%;
+  outline: 0;
+  border: 1px solid #373277;
+  border-radius: 50px;
+  background: #373277;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.3333333;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgba(54, 50, 119, 0.8);
+}
+.button:focus {
+  border-color: #0074c2;
+  box-shadow: 0 0 8px rgba(0, 116, 194, 0.6);
+}
+.btnPrimary {
+  border-color: #f56e9f;
+  background-color: #f56e9f;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.btnPrimary:hover,
+.btnPrimary:focus {
+  border-color: #f64e70 !important;
+  background-color: #f64e70 !important;
+  color: #fff;
+}
+.btnPrimaryBorder {
+  border-color: #f56e9f;
+  color: #f56e9f;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.btnPrimaryBorder:hover,
+.btnPrimaryBorder:focus {
+  border-color: #f64e70;
+  color: #f64e70;
+  background-color: #fff;
+}
+.btnSmall {
+  padding: 5px 0px;
+}
+.horizontalLineThrough {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0px 0px 10px; 
+  width: 100%;
+  color: #3a3a3a;
+  text-align: center;
+  font-size: 14px;
+}
+.iconPosition {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.labelText {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #131313;
+  margin: 0;
+}
+.backgroundOne {
+  background: url('../../../../public/NewIcon/nounEmail.svg') no-repeat;
+  background-position: 100% 10px;
+}
+.backgroundTwo {
+  background: url('../../../../public/NewIcon/lock.svg') no-repeat;
+  background-position: 100% 4px;
+}
+.mainPadding {
+  padding: 0px 30px;
+}
+.modalFooter {
+  display: inline-block;
+  width: 100%;
+}
+.footerText {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  color: #131313;
+  margin: 0;
+}
+.footerBtn {
+  display: inline-block;
+  width: auto;
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 5px 15px;
+}
+@media screen and (max-width: 767px) {
+  .footerText {
+    display: block;
+    text-align: center;
+  }
+  .footerBtn {
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .mainPadding {
+    padding: 0px 20px;
+  }
+}

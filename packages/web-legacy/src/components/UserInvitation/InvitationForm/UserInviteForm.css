@@ -1,0 +1,99 @@
+@import '../..//utils.css';
+
+.titleText {
+    font-size: 30px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.53;
+    letter-spacing: normal;
+    color: #131313;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.container {
+    border: solid 1px #e6e6e6;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 584px;
+    margin-top: 60px;
+}
+.formControlInput {
+    padding: 0px 35px 0px 0px;
+    height: 34px;
+    border-radius: 0px;
+    font-size: 16px;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.backgroundOne {
+    background: url('../../../../public/NewIcon/nounEmail.svg') no-repeat;
+    background-position: 100% 10px;
+}
+.btnPrimary {
+    border-color: #f56e9f;
+    background-color: #f56e9f;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 42px;
+    margin-top: 30px;
+  }
+  .btnPrimary:hover,
+  .btnPrimary:focus {
+    border-color: #f64e70 !important;
+    background-color: #f64e70 !important;
+    color: #fff;
+  }
+  .mainPadding {
+    padding: 0px 30px;
+  }
+  .horizontalLineThrough {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0px 0px 10px; 
+    width: 100%;
+    color: #3a3a3a;
+    text-align: center;
+    font-size: 14px;
+  }
+  .labelText {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: #131313;
+    margin: 0;
+  }
+  .countNumber {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #131313;
+    float: right;
+  }
+  @media screen and (max-width: 767px) {
+    .mainPadding {
+        padding: 0px 15px;
+    }
+    .titleText {
+      font-size: 22px;
+    }
+    .countNumber {
+      line-height: 13px;
+      vertical-align: middle;
+    }
+  }

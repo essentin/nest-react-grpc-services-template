@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ClientIdentityModule } from 'lib-client-identity';
 import { IdentityClient } from 'lib-client-identity';
 import { UserResolver } from './user.resolver';
-
+ 
 @Module({
   imports: [
     ClientIdentityModule.forRoot(

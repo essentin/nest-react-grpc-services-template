@@ -1,0 +1,129 @@
+.container {
+    width: 100%;
+    max-width: 584px;
+}
+.descText {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    color: #131313;
+    margin: 0;
+}
+.descScetion {
+    padding: 20px 30px;
+    border: 1px solid #e6e6e6;
+    border-top: 0;
+    width: 100%;
+    max-width: 584px;
+}
+.noBorder {
+    border: 0px none !important;
+}
+.rowBorder {
+    border-bottom: 1px solid #dce0e0;
+}
+.sectionTitleLight {
+    color: #131313;
+    font-size: 14px;
+}
+.textTruncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.TableTitleText {
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #131313;
+}
+.cardDetailText {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #131313;
+}
+.textAlignRight {
+    text-align: right;
+}
+.cardImg {
+    margin-right: 5px;
+}
+.trashImg {
+    margin-left: 10px;
+    vertical-align: text-top;
+    margin-right: 5px;
+}
+.setDefaultSection {
+    font-size: 14px !important;
+    border-right: 1px solid #dce0e0;
+    border-left: 1px solid #dce0e0;
+    padding: 11px 18px !important;
+    max-width: 100px;
+    min-width: 100px;
+    text-align: center;
+}
+.removeText {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #131313;
+    padding: 10px 0px 10px 18px;
+}
+.removeWidth {
+    width: 10%;
+}
+.defaultWidth {
+    width: 15%;
+}
+.cardListSection {
+    padding-left: 15px;
+}
+.setDeafutOverFlow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+.padding5 {
+    padding-bottom: 30px;
+}
+.linkText {
+    color: #131313;
+    text-decoration: none;
+}
+.linkText:hover,
+.linkText:focus,
+.linkText:active {
+    color: #00A098;
+    cursor: pointer;
+    text-decoration: none;
+}
+.transparentText {
+    color: transparent !important;
+}
+.fontWeight {
+    font-weight: 800;
+}
+.textCenter {
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .descScetion {
+        padding: 20px 15px;
+    }
+}

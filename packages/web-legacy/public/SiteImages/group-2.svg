@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="145" height="157" viewBox="0 0 145 157">
+    <defs>
+        <filter id="srtc3jnm6a">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.000000 0 0 0 0 0.627451 0 0 0 0 0.596078 0 0 0 1.000000 0"/>
+        </filter>
+        <filter id="f4n90uetfb" width="134.9%" height="133.6%" x="-17.4%" y="-16.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+        </filter>
+        <filter id="g21vis3epc">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.960784 0 0 0 0 0.431373 0 0 0 0 0.623529 0 0 0 1.000000 0"/>
+        </filter>
+        <filter id="h3r957h20d">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+        <linearGradient id="bnqg7hl50e" x1="69.151%" x2="69.151%" y1="100%" y2="29.887%">
+            <stop offset="0%" stop-color="#D18D46"/>
+            <stop offset="100%" stop-color="#FFC985"/>
+        </linearGradient>
+        <linearGradient id="ji3ce8pquf" x1="69.151%" x2="69.151%" y1="100%" y2="29.887%">
+            <stop offset="0%" stop-color="#D18D46"/>
+            <stop offset="100%" stop-color="#FFC985"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path stroke="#FFF" stroke-linecap="round" stroke-width="6" d="M10 112.656L139.142 44.5M10 112.656L25.961 142M.961 23L38.961 94M51.961 36L115.961 154M96.961 117L128.961 100" transform="translate(-357 -1225) translate(359.04 1225)"/>
+                <g>
+                    <g filter="url(#srtc3jnm6a)" transform="translate(-357 -1225) translate(359.04 1225) translate(32.96)">
+                        <path fill="#000" fill-opacity=".558" d="M37.532 105S71 93.012 71 78.224s-7.123-22.506-21.993-26.776c-14.87-.508-29.643 8.743-29.643 23.53C19.364 89.768 37.532 105 37.532 105z" filter="url(#f4n90uetfb)"/>
+                        <g filter="url(#g21vis3epc)">
+                            <path fill="#000" fill-rule="nonzero" d="M35.5 0C15.893 0 0 15.67 0 35c0 26.833 28.4 70 35.5 70C42.6 105 71 63.146 71 35 71 15.67 55.107 0 35.5 0z"/>
+                        </g>
+                    </g>
+                    <g filter="url(#h3r957h20d)" transform="translate(-357 -1225) translate(359.04 1225) translate(32.96)">
+                        <g>
+                            <path fill="url(#bnqg7hl50e)" d="M1.49 32.97c3.692-5.248 8.026-10.418 15.047-15.782 4.68-3.576 5.986-9.122 3.916-16.638-4.023 5.19-9.113 10.385-15.27 15.587-1.844 1.562-7.276 6.729-3.692 16.834z" transform="translate(24 16)"/>
+                            <path fill="url(#ji3ce8pquf)" d="M14.201 56.746c2.918-3.782 3.11-7.554.576-11.318-2.355-3.28-1.898-6.14 1.372-8.58 6.696-5.326 8.827-10.942 6.395-16.846-4.353 3.424-7.6 5.998-9.743 7.722C9.587 30.311-.093 39.017 7.138 49.25c1.468 2.437 5.763 5.616 7.063 7.497z" transform="translate(24 16)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

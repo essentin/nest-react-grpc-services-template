@@ -1,0 +1,6 @@
+{
+  "name": "WorkplaceSuggesModal",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./WorkplaceSuggesModal.js"
+}

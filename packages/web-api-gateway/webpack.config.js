@@ -13,5 +13,8 @@ module.exports = function (options) {
         },
       ],
     },
+    resolve: {
+      symlinks: false,
+    }
   });
 };

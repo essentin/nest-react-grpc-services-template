@@ -1,0 +1,10 @@
+.positionRelative {
+    position: relative;
+}
+.moreBgSection {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90%;
+    z-index: 2;
+}

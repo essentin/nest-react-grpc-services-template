@@ -1,0 +1,6 @@
+{
+  "name": "CardModal",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CardModal.js"
+}

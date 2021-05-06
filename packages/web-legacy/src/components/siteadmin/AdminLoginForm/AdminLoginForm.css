@@ -1,0 +1,98 @@
+@import '../../../components/variables.css';
+@import '../admin-common.css';
+@import '../admin-form.css';
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container {
+  margin: 100px auto;
+  padding: 0 0 40px;
+  max-width: 520px;
+}
+.panelHeader {
+  border-radius: 0;
+  width: 100%;
+  display: block;
+  color: #1a1b1c;
+  font-size: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dce0e0;
+  padding: 0px !important;
+  box-shadow: 0 2px 2px #777 !important;
+}
+.labelText {
+  display: inline-block;
+  margin-bottom: 5px;
+  max-width: 100%;
+  color: #1a1b1c;
+}
+.formGroup {
+  margin-bottom: 15px;
+}
+.spaceTop {
+  margin-top: 15px;
+}
+.formControlInput {
+  padding: 10px 35px 10px 10px;
+  height: 45px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #1a1b1c;
+  border-radius: 0;
+}
+.button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 16px;
+  width: 100%;
+  outline: 0;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  background: #f56e9f;
+  color: #1a1b1c;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.3333333;
+  cursor: pointer;
+}
+.button:hover {
+  background: #f56e9f;
+}
+.button:focus {
+  border-color: #0074c2;
+  box-shadow: 0 0 8px rgba(0, 116, 194, 0.6);
+}
+.btnPrimary {
+  border-color: #f56e9f;
+  background-color: #f56e9f;
+  color: #fff;
+  border-radius: 0px;
+}
+.btnPrimary:hover,
+.btnPrimary:focus,
+.btnPrimary:active,
+.btnPrimary:active:hover,
+.btnPrimary:active:focus {
+  border-color: #f64e70 !important;
+  background-color: #f64e70 !important;
+  color: #fff;
+}
+.btnPrimaryBorder {
+  border-color: #f56e9f;
+  color: #f56e9f;
+  background-color: #fff;
+  border-radius: 0px;
+}
+.btnPrimaryBorder:hover,
+.btnPrimaryBorder:focus,
+.btnPrimaryBorder:active,
+.btnPrimaryBorder:active:hover,
+.btnPrimaryBorder:active:focus {
+  border-color: #f64e70;
+  color: #f64e70;
+  background-color: #fff;
+}

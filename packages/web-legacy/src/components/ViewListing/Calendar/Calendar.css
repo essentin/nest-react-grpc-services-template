@@ -1,0 +1,580 @@
+@import '../common.css';
+.bookItContainer {
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+  position: relative;
+  background: transparent;
+}
+.bookItContentBox {
+  width: 100%;
+  background: transparent;
+  border-radius: 0px;
+  z-index: 100;
+  box-shadow: none;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+}
+.bootItPriceSection {
+  background-color: #3c3f40;
+  background-color: #ffffff;
+  border: 0;
+  color: #1a1b1c;
+  height: 125px;
+  padding: 24px 15px 0px 15px;
+  overflow-y: hidden;
+  border-radius: 0px;
+  text-align: center;
+  box-shadow: 0px 2px 12px 1px #eeebeb;
+  margin-bottom: 24px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.bookItPriceAmount {
+  display: inline-block;
+}
+.bookItPrice {
+  font-size: 30px;
+  font-weight: 500;
+}
+.instantIcon {
+  color: #ffb400;
+  position: relative;
+  bottom: 5px;
+  height: 22px;
+  width: 22px;
+}
+.bookItPanel {
+  background-color: #f9f9f9;
+  border-radius: 0;
+  padding: 15px 0px;
+  position: relative;
+  padding-top: 0px;
+  border-radius: 0px;
+}
+.bookItMessage {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.btnPrimary {
+  border-color: #f56e9f !important;
+  background-color: #f56e9f !important;
+  color: #fff !important;
+  border-radius: 50px !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+.reviewSectionText {
+  font-size: 16px;
+  margin-top: 18px;
+}
+.noPadding {
+  padding: 0px;
+}
+.discountSection {
+  padding: 0px 30px;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 24px;
+}
+.displayInlineBlock {
+  display: inline-block;
+}
+.discountContent {
+  width: 75%;
+  font-size: 16px;
+}
+.discountBtn {
+  width: 25%;
+  box-shadow: 0px 0px 8px 2px #eeebeb;
+  padding: 6px 13px;
+  border-radius: 0px;
+  font-size: 16px;
+}
+.formControlSelect {
+  height: 45px;
+  background-image: url('../../../../public/SiteIcons/price-down-arrow.png') !important;
+  background-repeat: no-repeat;
+  background-size: 13px 9px !important;
+  background-position: 93% !important;
+}
+.linkColor {
+  padding: 0;
+}
+.linkColor,
+.linkColor:hover,
+.linkColor:active,
+.linkColor:focus {
+  color: #f56e9f !important;
+}
+.dayTime {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.removeFloatRight {
+  padding: 0;
+  float: right;
+}
+.bookingInfoParagraph {
+  margin: 0 0 5px;
+}
+.spaceTop3 {
+  margin-top: 18px;
+}
+.bookPanelPadding {
+  padding: 0 15px 0px 30px;
+}
+.calendarBookingTitle {
+  font-size: 16px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #131313;
+  padding: 30px 30px 30px;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0;
+}
+.calenderSubtext {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #131313;
+  height: 54px;
+  padding: 17px 0px;
+  margin: 0;
+}
+.selectText {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #131313;
+}
+.dateSection {
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
+  padding: 17px 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #131313;
+  margin: 0;
+  height: 54px;
+}
+.calendarSection {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+.timeZonePadding {
+  padding: 17px 15px 11px 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.timeZoneNoTopBottomPadding {
+  padding: 0px 0px 0px 30px !important;
+  border-bottom: 1px solid #e6e6e6;
+}
+.closeHomePage {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -10px;
+  left: 10px;
+  cursor: pointer;
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .discountContent {
+    width: 65%;
+  }
+  .discountBtn {
+    width: 35%;
+  }
+  .discountSection {
+    padding: 0px 15px;
+  }
+  .bookItPanel {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bookItContainer {
+    margin-top: 0px;
+    margin-bottom: 48px;
+  }
+  .bookItContentBox {
+    position: relative;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .bookItContentBox {
+    position: static;
+  }
+  .bookItContainer {
+    margin-top: 0px !important;
+    z-index: 1;
+  }
+  .bootItPriceSection {
+    padding: 0px 15px 0px 15px;
+    box-shadow: 0px 3px 3px 0px #eeebeb;
+    margin-bottom: 18px;
+    height: 90px;
+  }
+  .reviewSectionText {
+    margin-top: 6px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bookItPriceAmount {
+    float: left;
+  }
+  .mobileRight {
+    float: right;
+    padding: 6px 0px 0 0;
+  }
+  .bookItPanel {
+    text-align: left;
+  }
+  .discountSection {
+    padding: 0px 15px;
+  }
+  .bootItPriceSection {
+    box-shadow: 0px 3px 3px 0px #eeebeb;
+    margin-bottom: 18px;
+    color: #1a1b1c;
+    height: 100px;
+    padding: 0px 15px 0px 15px;
+  }
+  .discountContent {
+    width: 65%;
+  }
+  .discountBtn {
+    width: 35%;
+  }
+}
+.discountText {
+  color: #3fb34f;
+}
+.qustionIcon {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.vtrTextTop {
+  vertical-align: text-top;
+}
+@media screen and (max-width: 991px) {
+  .bookItContentBox {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+}
+.reviewSection {
+  display: inline-block;
+  float: left;
+  padding-right: 5px;
+}
+.scrollTable {
+  max-height: 160px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+}
+.iconSection {
+  padding-left: 5px;
+}
+.positionR {
+  position: relative;
+}
+.toolTipColor {
+  color: #1a1b1c !important;
+  position: relative;
+  bottom: 5px;
+  height: 18px;
+  width: 18px;
+}
+.specialPriceText {
+  display: inline-block;
+  vertical-align: initial;
+  width: auto;
+  word-break: break-word;
+}
+.specialPriceIcon {
+  position: absolute;
+  display: inline-block;
+  width: 19px;
+  vertical-align: top;
+  margin-right: 4px;
+}
+.specialPriceIconNew {
+  position: static !important;
+  width: 100% !important;
+  height: 100%;
+}
+.tltipNew {
+  position: absolute !important;
+  top: auto !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: 0 !important;
+  display: none;
+  background: #fff !important;
+  min-width: 315px !important;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0px;
+  color: #3a3a3a !important;
+  z-index: 1;
+  margin: 0 auto auto 15px;
+  width: 100%;
+  max-width: 315px !important;
+  margin-top: 8px !important;
+  box-shadow: 0px 0px 8px 0px #eeebeb;
+}
+.paddingLeft {
+  padding: 0 0 0 22px;
+}
+.tltip {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  left: 0px;
+  display: none;
+  background: #1a1b1c;
+  min-width: 280px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0px;
+  color: #fff;
+}
+.specialPriceIcon:hover .tltip {
+  display: block;
+}
+.relativeSection::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 10px;
+  right: 0;
+  top: 34px;
+  bottom: 0;
+  text-align: center;
+  background-color: #1a1b1c;
+  z-index: 1;
+  max-width: 11px;
+  max-height: 11px;
+  transform: rotate(136deg);
+}
+.relativeSectionNew::after {
+  content: '';
+  left: 50% !important;
+  top: -6px !important;
+  background-color: #fff !important;
+  box-shadow: -1px 1px 2px 0px #eeebeb;
+}
+.faqImage {
+  width: 100%;
+  max-width: 19px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.fontWeight {
+  font-weight: 500;
+}
+.startPaddingLeft {
+  padding-left: 6px;
+}
+.startPaddingRight {
+  padding-right: 6px;
+}
+.spaceTop5 {
+  margin-top: 30px;
+}
+.TotalText {
+  font-size: 25px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.64;
+  letter-spacing: normal;
+  color: #131313;
+}
+.descriptionMainSection {
+  text-align: left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  top: 139px;
+}
+.descriptionImg {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(171deg) brightness(107%) contrast(101%);
+  cursor: pointer;
+}
+.descriptionSection {
+  padding: 11px 15px 10px 24px;
+  border-radius: 2px;
+  background-color: #f56e9f;
+  margin: 0 30px;
+  display: inline-block;
+  position: relative;
+}
+.descriptionSection::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  right: 0px;
+  top: 18px;
+  height: 0px;
+  width: 0px;
+  transform: rotate(180deg);
+  z-index: -1;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 22px solid #e9417e;
+}
+.dateSectionTop {
+  top: 193px;
+}
+.dateTimeSectionTop {
+  top: 249px;
+  z-index: 0;
+}
+.descriptionText {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-right: 15px;
+  vertical-align: middle;
+}
+.selectPaddingLeft {
+  padding-left: 30px !important;
+}
+.errorPadding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.bookListTitle {
+  font-size: 20px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #131313;
+  padding: 17px 0px;
+  margin: 0;
+}
+.paymentCardTitle {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #131313;
+  margin: 0;
+}
+.downArrowPayment {
+  width: 100%;
+  max-width: 8px;
+  transform: rotate(-90deg);
+  margin-left: 5px !important;
+  margin: 0 auto;
+}
+.paymentPaddingLeft {
+  padding-left: 10px;
+}
+.paymentTextSection {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+}
+.paymentManageSection {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+.paymentTopPadding {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .tltip {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    left: 0;
+    display: none;
+    background: #1a1b1c;
+    min-width: 260px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px;
+    color: #fff;
+  }
+  .tltipNew {
+    max-width: 280px !important;
+    min-width: 280px !important;
+  }
+  .specialPriceIcon:hover .tltip {
+    display: block;
+  }
+  .relativeSection::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    top: 32px;
+    bottom: 0;
+    text-align: center;
+    background-color: #1a1b1c;
+    z-index: 1;
+    max-width: 11px;
+    max-height: 11px;
+    transform: rotate(136deg);
+  }
+  .bookItContentBox {
+    box-shadow: none;
+  }
+  .bookItPanel {
+    padding: 0px;
+  }
+  .reviewSectionText {
+    margin-top: 6px;
+  }
+  .customLabel {
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+  .TotalText {
+    font-size: 20px;
+  }
+  .bookItContentBox {
+    z-index: 0;
+  }
+  .descriptionText {
+    font-size: 13px;
+  }
+}

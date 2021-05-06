@@ -1,0 +1,6 @@
+{
+  "name": "HostLoginForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./HostLoginForm.js"
+}

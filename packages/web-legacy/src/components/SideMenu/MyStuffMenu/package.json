@@ -1,0 +1,6 @@
+{
+  "name": "MyStuffMenu",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./MyStuffMenu.js"
+}

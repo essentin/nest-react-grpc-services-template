@@ -1,0 +1,53 @@
+query getListingData($listId: String!, $preview: Boolean) {
+  UserListing(listId: $listId, preview: $preview) {
+    id
+    userId
+    title
+    bookingType
+    blockedDates {
+      blockedDates
+      calendarStatus
+      isSpecialPrice
+    }
+    listBlockedPrice {
+      calendarId
+      calendarStatus
+      blockedDates
+      isSpecialPrice
+    }
+    listingData {
+      currency
+      cancellation {
+        id
+        policyName
+      }
+    }
+    isListOwner
+    wishListStatus
+    activity {
+      id
+      listId
+      activityType
+      basePrice
+      minHour
+      discount
+      cleaningFee
+      maxGuest
+      isCleaningIncluded
+      currency
+      activityName
+    }
+    spaceAvailability {
+      listId
+      day
+      isOpen
+      isWholeDay
+      timeSlot {
+        startTime
+        endTime
+        spaceAvailabilityId
+        isNextDay
+      }
+    }
+  }
+}

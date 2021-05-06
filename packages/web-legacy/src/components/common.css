@@ -1,0 +1,734 @@
+@import 'utils.css';
+@import 'helpers.css';
+.btn,
+.btn:focus {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 6px 12px !important;
+  width: auto;
+  outline: 0 !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0px !important;
+  background: var(--background-color) !important;
+  color: var(--btn-color) !important;
+}
+.btn:hover {
+  background: var(--border-color) !important;
+  outline: 0 !important;
+}
+.btnPrimary,
+.btnPrimary:focus {
+  border-color: var(--btn-primary-bg) !important;
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-color) !important;
+}
+.btnPrimary:hover {
+  border-color: var(--btn-primary-hover-bg) !important;
+  background-color: var(--btn-primary-hover-bg) !important;
+  color: var(--btn-primary-color) !important;
+}
+.btnPrimaryBorder,
+.btnPrimaryBorder:focus {
+  border-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-bg) !important;
+  background-color: var(--btn-primary-color) !important;
+}
+.btnPrimaryBorder:hover {
+  border-color: var(--btn-primary-hover-bg) !important;
+  color: var(--btn-primary-hover-bg) !important;
+  background-color: var(--btn-primary-color) !important;
+}
+.btnSecondary,
+.btnSecondary:focus {
+  border-color: var(--btn-secondary-bg) !important;
+  background-color: var(--btn-secondary-bg) !important;
+  color: var(--btn-secondary-color) !important;
+}
+.btnSecondary:hover {
+  border-color: var(--btn-secondary-hover-bg) !important;
+  background-color: var(--btn-secondary-hover-bg) !important;
+  color: var(--btn-secondary-color) !important;
+}
+.btnLink,
+.btnLink:focus {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0px !important;
+  width: auto !important;
+  outline: 0 !important;
+  background: var(--background-color) !important;
+  color: var(--btn-color) !important;
+  font-weight: inherit;
+  word-wrap: break-word;
+  line-height: 18px;
+  letter-spacing: normal;
+  font-size: inherit;
+  border: 0px !important;
+}
+.btnLink:hover {
+  background: var(--background-color) !important;
+  color: var(--btn-color) !important;
+  outline: 0 !important;
+  text-decoration: underline;
+  font-weight: inherit;
+  word-wrap: break-word;
+  line-height: 18px;
+  letter-spacing: normal;
+  border: 0px !important;
+}
+.btnLinkPrimary,
+.btnLinkPrimary:focus {
+  background-color: var(--background-color) !important;
+  color: var(--btn-primary-bg) !important;
+}
+.btnLinkPrimary:hover {
+  background-color: var(--background-color) !important;
+  color: var(--btn-primary-bg) !important;
+}
+.btnLinkSecondary,
+.btnLinkSecondary:focus {
+  background-color: var(--background-color) !important;
+  color: var(--btn-secondary-bg) !important;
+}
+.btnLinkSecondary:hover {
+  background-color: var(--background-color) !important;
+  color: var(--btn-secondary-bg) !important;
+}
+.searchFilterPopover {
+  position: absolute;
+  top: 70px;
+  left: -350px;
+  z-index: 10;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 14px 36px 2px; */
+  box-shadow: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  display: inline-block;
+  max-height: 65vh;
+  visibility: visible;
+  background: #f9f9f9;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #e9e9e9;
+  border-image: initial;
+  border-radius: 0px;
+}
+.searchFilterPopoverFull {
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 66%;
+  height: initial;
+  box-shadow: none;
+  visibility: visible;
+  top: 148px;
+  background: #f9f9f9;
+  border-radius: 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+.searchFilterPopoverOverlay {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 64px;
+  z-index: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  background: rgba(255, 255, 255, 0.85);
+  left: 0;
+  right: 0;
+  visibility: visible;
+  bottom: 0;
+  -webkit-overflow-scrolling: touch;
+}
+.searchFilterPopoverContent {
+  min-width: 370px;
+  padding: 24px 48px;
+}
+.searchFilterPopoverContentDate {
+  min-width: 650px !important;
+}
+.searchFilterCloseIcon {
+  font-size: 30px;
+  color: #3a3a3a;
+}
+.searchFilterPopoverFooter {
+  width: 100%;
+  position: relative;
+  line-height: 0;
+}
+.displayTable {
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+}
+.displayTableRow {
+  display: table-row;
+  vertical-align: middle;
+}
+.displayTableCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.displayInlineBlock {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+.displayBlock {
+  display: block;
+}
+.fullWidth {
+  width: 100% !important;
+}
+.captionTitle {
+  font-size: 15px;
+}
+.showTabletSection {
+  display: none !important;
+}
+.incrementDecrementButton {
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid #dce0e0;
+  border-radius: 0px;
+  display: block;
+  overflow: hidden;
+}
+.incrementDecrementButton {
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid #dce0e0;
+  border-radius: 0px;
+  display: block;
+  overflow: hidden;
+}
+.blockRadioButton {
+  margin-top: 0;
+  max-width: 320px;
+  border: 1px solid #dce0e0;
+  padding: 20px;
+}
+.commonBorder {
+  border: 1px solid #d0d0d0 !important;
+  color: #3a3a3a !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+}
+.textAignRight {
+  text-align: right;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.textAignCenter {
+  text-align: center;
+}
+.moreFilterTitle {
+  font-size: 18px;
+  font-weight: 500 !important;
+}
+.filterToggleLink:focus {
+  font-size: 16px !important;
+}
+.dot {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+/*************************** SearchButton Start **********************/
+.searchBtn {
+  padding: 12px 27px !important;
+}
+.searchBtn:focus {
+  padding: 12px 27px !important;
+}
+.searchBtn:hover {
+  background: #f64e70 !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  border-color: #f64e70 !important;
+}
+/*************************** SearchButton End **********************/
+/*************************** Header Modal Start **********************/
+.activeItem {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 18px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.mainSection {
+  display: inline-block;
+  padding: 0px 8px;
+  width: 20%;
+}
+.activeItem:hover,
+.activeItem:focus,
+.activeItem:active {
+  background-color: rgb(242, 242, 242);
+  color: #1a1b1c;
+}
+.activeSection:first-child {
+  background-color: #fff;
+  color: #1a1b1c;
+  border: 1px solid #3a3a3a;
+}
+/************************** InputSection  Start *****************/
+.jumboInput {
+  font-size: 18px;
+  height: 55px;
+  padding: 0 20px;
+  border-color: #d0d0d0;
+  vertical-align: middle;
+}
+.requiedBorder {
+  border-left: 2px solid #f64e70 !important;
+}
+.formControlInput {
+  padding: 10px 35px 10px 20px;
+  height: 55px;
+  border-radius: 0px;
+  font-size: 18px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #3a3a3a;
+}
+.formControlInputMaxWidth {
+  max-width: 320px;
+}
+.jumboSelect {
+  height: 55px !important;
+  font-size: 18px !important;
+  padding: 10px 47px 10px 20px !important;
+  border: 1px solid #d0d0d0;
+  border-radius: 0px !important;
+  max-width: 320px;
+}
+.jumboSelectPadding {
+  padding: 20px 50px 20px 20px !important;
+}
+/************************** InputSection  End *****************/
+/************************** Site Button Start *****************/
+.backNextBtn {
+  padding: 12px 40px;
+  border-radius: 0 !important;
+  margin-right: 30px;
+}
+/************************** Site Button End *****************/
+/************************** Site Padding Margin FontSize and Weight *****************/
+.marginRight {
+  margin-right: 15px;
+}
+.marginLeft {
+  margin-left: 15px;
+}
+.spaceTop1 {
+  margin-top: 6px;
+}
+.spaceTop2 {
+  margin-top: 12px;
+}
+.spaceTop3 {
+  margin-top: 18px;
+}
+.spaceTop4 {
+  margin-top: 24px;
+}
+.spaceTop5 {
+  margin-top: 30px;
+}
+.spaceTop6 {
+  margin-top: 36px;
+}
+.space1 {
+  margin-bottom: 6px;
+}
+.space2 {
+  margin-bottom: 12px;
+}
+.space3 {
+  margin-bottom: 18px;
+}
+.space4 {
+  margin-bottom: 24px;
+}
+.space5 {
+  margin-bottom: 30px;
+}
+.space6 {
+  margin-bottom: 36px;
+}
+.paddingTop1 {
+  padding-top: 6px;
+}
+.paddingTop2 {
+  padding-top: 12px;
+}
+.paddingTop3 {
+  padding-top: 18px;
+}
+.paddingTop4 {
+  padding-top: 24px;
+}
+.paddingTop5 {
+  padding-top: 30px;
+}
+.paddingTop6 {
+  padding-top: 36px;
+}
+.paddingBottom1 {
+  padding-bottom: 6px;
+}
+.paddingBottom2 {
+  padding-bottom: 12px;
+}
+.paddingBottom3 {
+  padding-bottom: 18px;
+}
+.paddingBottom4 {
+  padding-bottom: 24px;
+}
+.paddingBottom5 {
+  padding-bottom: 30px;
+}
+.paddingBottom6 {
+  padding-bottom: 36px;
+}
+.paddingBottom7 {
+  padding-bottom: 42px;
+}
+.fontWeight {
+  font-weight: 500;
+}
+.listContect {
+  font-size: 16px;
+  color: #3a3a3a;
+  position: relative;
+  margin-left: 20px;
+}
+.listContect::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #f56e9f;
+  position: absolute;
+  border-radius: 50%;
+  left: -20px;
+  right: 0;
+  top: 5px;
+  bottom: 0;
+  min-width: 10px;
+  display: block;
+  max-width: 10px;
+  min-height: 10px;
+  max-height: 10px;
+}
+.radioBtnContent {
+  vertical-align: middle;
+  margin-left: 8px;
+  padding-top: 3px;
+  display: inline-block;
+  color: #3a3a3a !important;
+}
+.subTextFontSize {
+  font-size: 20px;
+  color: #1a1b1c;
+  font-weight: 500;
+}
+.fontSize1 {
+  font-size: 14px;
+}
+.fontSize2 {
+  font-size: 16px;
+}
+.fontSize3 {
+  font-size: 18px;
+}
+.fontSize4 {
+  font-size: 20px;
+}
+.fontSize5 {
+  font-size: 22px;
+}
+.fontSize6 {
+  font-size: 24px;
+}
+.fontSize7 {
+  font-size: 26px;
+}
+.fontSize8 {
+  font-size: 28px;
+}
+.fontSize9 {
+  font-size: 30px;
+}
+.textPrimaryColor {
+  color: #3a3a3a;
+}
+.textSecondryColor {
+  color: #1a1b1c;
+}
+.lineHeight1 {
+  line-height: 24px;
+}
+.lineHeight2 {
+  line-height: 26px;
+}
+.lineHeight3 {
+  line-height: 30px;
+}
+/************************** Site Padding Margin FontSize and Weight ********************/
+.horizantalMargin {
+  margin: 36px 0px !important;
+}
+.positionRelative {
+  position: relative;
+}
+.noMargin {
+  margin: 0;
+}
+.breadcrumb {
+  text-align: center;
+  color: #a9a9a9;
+  font-weight: 400;
+  font-size: 16px;
+}
+.changeColor {
+  color: #f64e70;
+}
+.line {
+  text-align: center;
+  margin: 40px 0;
+}
+.line img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .backNextBtn {
+    padding: 12px 24px;
+    border-radius: 0 !important;
+    margin-right: 15px;
+  }
+  .noMarginRight {
+    margin-right: 0px;
+  }
+}
+/************************** Site Button End *****************/
+@media screen and (max-width: 767px) {
+  .mainSection {
+    width: 50%;
+  }
+}
+/*************************** Header Modal End **********************/
+@media screen and (max-width: 1199px) {
+  .hideTabletSection {
+    display: none !important;
+  }
+  .showTabletSection {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .searchFilterPopoverFull {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    box-shadow: none;
+    border: 1px solid #fff;
+    max-height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  .searchFilterPopoverContent {
+    min-width: 320px;
+    padding: 15px 15px 70px !important;
+    height: 100%;
+    min-height: 100vh;
+    -webkit-overflow-scrolling: touch;
+  }
+  .searchFilterPopoverContentDate {
+    min-width: 320px;
+  }
+  .searchFilterPopoverHeader {
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background: #f9f9f9;
+  }
+  .searchFilterPopoverFooter {
+    font-weight: 600;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    z-index: 10;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+.capitalizeText {
+  text-transform: capitalize;
+}
+@media screen and (max-width: 767px) {
+  .searchFilterPopoverFooter {
+    position: relative !important;
+    z-index: 0;
+  }
+  .searchFilterPopoverContentDate {
+    min-width: 100% !important;
+  }
+  .btnWidthMobile,
+  .btnWidthMobile:focus {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .btnFontsize {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 360px) {
+  .searchFilterCloseIcon {
+    font-size: 25px;
+  }
+}
+@media (max-width: 993px) and (min-width: 769px) {
+  .responsiveFontsize {
+    font-size: 12px;
+  }
+  .searchFilterPopoverInstantBook {
+    left: auto;
+    right: 0;
+  }
+}
+/*****************Apply Button Alignment Start **********************/
+.applyBtnDesktop {
+  text-align: right;
+}
+.applyBtn,
+.applyBtn:hover,
+.applyBtn:active,
+.applyBtn:focus {
+  background-color: #f64e70 !important;
+  color: #ffffff !important;
+  padding: 6px 18px !important;
+  border-radius: 0px;
+  text-decoration: none;
+}
+@media screen and (max-width: 991px) {
+  .applyBtnDesktop {
+    text-align: center;
+  }
+  .applyBtnDesktopRight {
+    text-align: right !important;
+  }
+  .applyBtnDesktopNoPaddingRight {
+    padding-right: 0px !important;
+  }
+}
+/*****************Apply Button Alignment Start **********************/
+.vtrMiddle {
+  vertical-align: middle;
+}
+/***************** Activity Location Section Start ************************/
+.listText {
+  color: #3a3a3a;
+  font-size: 16px;
+  padding: 2px;
+  cursor: pointer;
+  vertical-align: top;
+}
+.ArrowIconSection {
+  width: 30px;
+  display: table-cell;
+  vertical-align: top;
+}
+.ArrowIcon {
+  width: 100%;
+  height: 100%;
+  max-width: 20px;
+  max-height: 20px;
+  color: #3a3a3a;
+  cursor: pointer;
+  opacity: 0.3;
+  vertical-align: top;
+}
+.listTextHover:hover .ArrowIcon,
+.listTextHover:hover .listText {
+  color: #f56e9f;
+  cursor: pointer;
+  opacity: 2;
+  text-decoration: none;
+}
+.activityContainer {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 60px 15px 80px 15px;
+}
+.activeTitleText {
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.activeTitleText::after {
+  content: '';
+  width: 36px;
+  height: 3px;
+  border-radius: 0px;
+  background: #f56e9f;
+  left: 0px;
+  right: 0;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+}
+.subText {
+  font-weight: 500;
+  font-size: 22px;
+  color: #1a1b1c;
+  margin-bottom: 24px;
+  margin-top: 36px;
+}
+.textOverFlow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.asctivityBorderMargin {
+  margin: 24px 0 0px 0;
+}
+.noTextDecratin {
+  text-decoration: none !important;
+}
+.displayGridSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  padding-top: 20px;
+}
+.locationBgColor {
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 767px) {
+  .displayGridSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/***************** Activity Location Section Start ************************/

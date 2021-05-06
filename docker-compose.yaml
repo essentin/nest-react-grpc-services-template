@@ -1,81 +1,81 @@
-version: "3"
+version: '3'
 
 services:
   web-api-gateway:
-    image: "web-api-gateway"
+    image: 'web-api-gateway'
     build:
-      dockerfile: "./packages/web-app/Dockerfile"
-      context: "."
+      dockerfile: './packages/web-app/Dockerfile'
+      context: '.'
     depends_on:
-      - "service-identity"
+      - 'service-identity'
     networks:
-      - "frontend"
-      - "backend"
+      - 'frontend'
+      - 'backend'
     ports:
-      - "3100"
+      - '3100:3100'
     environment:
-      NODE_ENV: "test"
-      PORT: "3100"
-    restart: "on-failure"
+      NODE_ENV: 'test'
+      PORT: '3100'
+    restart: 'on-failure'
 
   web-app:
-    image: "web-app"
+    image: 'web-app'
     build:
-      dockerfile: "./packages/web-app/Dockerfile"
-      context: "."
+      dockerfile: './packages/web-app/Dockerfile'
+      context: '.'
     networks:
-      - "frontend"
+      - 'frontend'
     ports:
-      - "3000"
+      - '3000:3000'
     depends_on:
-      - "web-api-gateway"
+      - 'web-api-gateway'
     environment:
-      PORT: "3000"
-    restart: "on-failure"
+      PORT: '3000'
+    restart: 'on-failure'
 
   web-landing:
-    image: "web-landing"
+    image: 'web-landing'
     build:
-      dockerfile: "./packages/web-landing/Dockerfile"
-      context: "."
+      dockerfile: './packages/web-landing/Dockerfile'
+      context: '.'
     networks:
-      - "frontend"
+      - 'frontend'
     ports:
-      - "3001"
+      - '3001:3001'
     environment:
-      PORT: "3001"
-      NGINX_PORT: "3001"
-    restart: "on-failure"
+      PORT: '3001'
+      NGINX_PORT: '3001'
+    restart: 'on-failure'
 
   web-server:
-    image: "web-server"
+    image: 'web-server'
     build:
-      context: "./packages/web-server"
+      context: './packages/web-server'
     networks:
-      - "frontend"
+      - 'frontend'
     ports:
-      - "80:80"
+      - '80:80'
     depends_on:
-      - "web-api-gateway"
-      - "web-app"
+      - 'web-api-gateway'
+      - 'web-app'
     environment:
-      PORT: "80"
-    restart: "on-failure"
+      PORT: '80'
+    restart: 'on-failure'
 
   service-identity:
-    image: "service-identity"
+    image: 'service-identity'
     build:
-      dockerfile: "./packages/service-identity/Dockerfile"
-      context: "."
+      dockerfile: './packages/service-identity/Dockerfile'
+      context: '.'
     networks:
-      - "backend"
+      - 'backend'
     ports:
-      - "51201"
+      - '51201:51201'
     environment:
-      NODE_ENV: "test"
-      URL: "0.0.0.0"
-      PORT: "51201"
-    restart: "on-failure"
+      NODE_ENV: 'test'
+      URL: '0.0.0.0'
+      PORT: '51201'
+    restart: 'on-failure'
 
   # service-user:
   #   image: "service-user"
@@ -95,25 +95,24 @@ services:
     image: mongo
     restart: always
     networks:
-      - "backend"
+      - 'backend'
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
 
-  
   redis:
-    image: "redis:alpine"
+    image: 'redis:alpine'
     command: redis-server --requirepass admin_password
     ports:
-      - "6379:6379"
+      - '6379:6379'
     networks:
-      - "backend"
+      - 'backend'
 
   mongo-express:
     image: mongo-express
     restart: always
     networks:
-      - "backend"
+      - 'backend'
     ports:
       - 8081:8081
     environment:

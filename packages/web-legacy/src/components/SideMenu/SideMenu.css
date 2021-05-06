@@ -1,0 +1,116 @@
+@import '../variables.css';
+
+.container {
+  padding: 5px;
+}
+.navItem {
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  font-family: Catamaran;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #131313;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.navItem:hover {
+  color: #ffffff;
+  background-color: #00a098;
+}
+
+.navItem:focus {
+  color: #ffffff;
+  background-color: #00a098;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.active {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #00a098;
+}
+
+.label {
+  margin-right: 10px;
+  height: 16px;
+  font-family: Catamaran;
+  font-size: 16px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #131313;
+}
+
+.tabs {
+  width: 100%;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 100px 0;
+  position: relative;
+  top: 100px;
+}
+
+.tab {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-decoration: none !important;
+}
+.tabActive {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-decoration: none !important;
+}
+
+.tabLabel {
+  font-family: Catamaran;
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #131313;
+}
+
+.tabLabelActive {
+  font-family: Catamaran;
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #00a098;
+}
+@media screen and (max-width: 1199px) {
+  .responsiveDisplay {
+    display: inline-block;
+    width: 33.3%;
+  }
+  .tabs {
+    padding: 0px 0px;
+    top: 0px;
+    z-index: 4;
+  }
+  .tab {
+    padding-top: 20px;
+  }
+  .tabActive {
+    padding-top: 0px;
+  }
+}

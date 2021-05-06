@@ -1,0 +1,41 @@
+.lazyLoadImageContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+.lazyLoadImagePreload {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px;
+}
+.lazyLoadImageLoaded {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s ease;
+  background-color: transparent !important;
+}
+.lazyLoadImageBg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.35);
+}

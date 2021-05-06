@@ -1,0 +1,107 @@
+.root {
+	margin: 0;
+}
+.navDropDown {
+	border: 0px;
+}
+.userAvatar {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid #c4c4c4;
+}
+.breakPointScreen {
+	display: none !important;
+}
+.nonBreakPointScreen {
+	display: block !important;
+}
+.btnPrimaryBorder {
+	border-color: transparent !important;
+	background-color: transparent !important;
+	height: 30px;
+	border-radius: 30.5px;
+	font-family: Catamaran;
+	font-size: 16px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffc984;
+	padding: 6px 15px;
+  }
+  .btnPrimaryBorderAbout {
+	border-color: #00a098 !important;
+	background-color: #00a098 !important;
+	height: 30px;
+	border-radius: 30.5px;
+	font-family: Catamaran;
+	font-size: 16px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	padding: 6px 15px;
+  }
+  .btnPrimaryBorder:hover,
+  .btnPrimaryBorder:focus,
+  .btnPrimaryBorder:active,
+  .btnPrimaryBorder:active:hover,
+  .btnPrimaryBorder:active:focus {
+	border-color: #00a098 !important;
+	background-color: #00a098 !important;
+	color: #fff !important;
+	outline: 0 !important;
+  }
+  .inviteLinkSpan  {
+	display: block;
+	text-align: center;   
+  }
+  .setActiveColor {
+	background: #00a098 !important;
+	color: #fff !important;
+  }
+@media screen and (max-width: 1200px) {
+	.breakPointScreen {
+		display: block !important;
+	}
+	.nonBreakPointScreen {
+		display: none !important;
+	}
+}
+@media(max-width:1200px){
+
+.newMenu {
+	height: 100vh;
+	background: #fff !important;
+	overflow-y: scroll;
+}
+.newMenuDesign {
+	margin-top: 20px;
+	border-top: 1px solid #ffc984;
+}
+.newMenuDesign {
+	margin-top: 60px;
+}
+}
+@media(min-width:768px) and (max-width:1200px) {
+	.newMenu {
+		left: 0;
+	}
+	.newMenuDesign {
+		margin-top: 60px !important;
+		border-top: 1px solid #ffc984;
+		margin-right: 0px !important;
+	}
+}
+@media(max-width:767px){
+
+.newMenuDesign {
+	margin-top: 60px;
+}
+}

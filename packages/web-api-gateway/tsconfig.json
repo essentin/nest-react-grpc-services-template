@@ -8,14 +8,9 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
     "incremental": true,
-    "paths": {
-      "sgram/grpc-client-auth": [
-        "../libs/grpc-client-identity/dist"
-      ]
-    },
-    
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "baseUrl": "./"
   }
 }

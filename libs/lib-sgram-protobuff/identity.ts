@@ -1,9 +1,11 @@
 /* eslint-disable */
-import { GrpcMethod, GrpcStreamMethod } from "@nestjs/microservices";
-import { Observable } from "rxjs";
-import { EmailParam } from "./common";
+import { GrpcMethod, GrpcStreamMethod } from '@nestjs/microservices';
+import { util, configure } from 'protobufjs/minimal';
+import * as Long from 'long';
+import { Observable } from 'rxjs';
+import { EmailParam } from './common';
 
-export const protobufPackage = "identity";
+export const protobufPackage = 'identity';
 
 export interface TokenParam {
   authToken: string;
@@ -13,7 +15,7 @@ export interface Jwt {
   jwt: string;
 }
 
-export const IDENTITY_PACKAGE_NAME = "identity";
+export const IDENTITY_PACKAGE_NAME = 'identity';
 
 export interface IdentityServiceClient {
   login(request: EmailParam): Observable<Jwt>;
@@ -29,31 +31,38 @@ export interface IdentityServiceController {
 
 export function IdentityServiceControllerMethods() {
   return function (constructor: Function) {
-    const grpcMethods: string[] = ["login", "authenticate"];
+    const grpcMethods: string[] = ['login', 'authenticate'];
     for (const method of grpcMethods) {
       const descriptor: any = Reflect.getOwnPropertyDescriptor(
         constructor.prototype,
-        method
+        method,
       );
-      GrpcMethod("IdentityService", method)(
+      GrpcMethod('IdentityService', method)(
         constructor.prototype[method],
         method,
-        descriptor
+        descriptor,
       );
     }
     const grpcStreamMethods: string[] = [];
     for (const method of grpcStreamMethods) {
       const descriptor: any = Reflect.getOwnPropertyDescriptor(
         constructor.prototype,
-        method
+        method,
       );
-      GrpcStreamMethod("IdentityService", method)(
+      GrpcStreamMethod('IdentityService', method)(
         constructor.prototype[method],
         method,
-        descriptor
+        descriptor,
       );
     }
   };
 }
 
-export const IDENTITY_SERVICE_NAME = "IdentityService";
+export const IDENTITY_SERVICE_NAME = 'IdentityService';
+
+// If you get a compile-error about 'Constructor<Long> and ... have no overlap',
+// add '--ts_proto_opt=esModuleInterop=true' as a flag when calling 'protoc'.
+if (util.Long !== Long) {
+  util.Long = Long as any;
+  configure();
+}

@@ -1,0 +1,69 @@
+@import '../helpers.css';
+.aboutBtn, .aboutBtn:focus, .aboutBtn:active, .aboutBtn:hover {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #131313 !important;
+    padding: 7px 19.5px;
+    border-radius: 30.5px;
+    background-color: #f9f9f9 !important;
+    box-shadow: none !important;
+    border-color: #e6e6e6 !important;
+}
+.calcelBtn, .calcelBtn:active, .calcelBtn:hover, .calcelBtn:focus {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff !important;
+    padding: 10px 35px 10px 38px;
+    border-radius: 25px;
+    background-color: #f56e9f !important;
+    box-shadow: none !important;
+    border-color: #f56e9f !important;
+}
+.displayInlineBtn {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.textAlignRight {
+    text-align: right;
+}
+.subText {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #131313;
+}
+.textAlignCenter {
+    text-align: center;
+}
+.siteColor {
+    color: #f56e9f !important;
+}
+
+.textAlignDate {
+    width: 115px;
+    min-width: 115px;
+}
+
+@media screen and (max-width: 767px) {
+    .displayInlineBtn {
+        display: block;
+        width: 100%;
+    }
+    .textAlignRight {
+        margin-top: 36px;
+        margin-bottom: 30px;
+    }
+}

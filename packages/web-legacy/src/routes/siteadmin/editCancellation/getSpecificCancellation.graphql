@@ -1,0 +1,10 @@
+query getSpecificCancellation($cancellationId: Int!){
+  getSpecificCancellation(cancellationId: $cancellationId) {
+    id
+    policyName
+    policyContent    
+    subTitle
+    subContent
+    image
+  }
+}

@@ -1,0 +1,507 @@
+@import '../../components/helpers.css';
+.Maincontainer {
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+.sectionOneContainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.titleText {
+    font-size: 80px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffc984;
+    margin-bottom: 0;
+    margin-top: 60px;
+}
+.titleSubText {
+    font-size: 30px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffc984;
+    margin-top: 12px;
+}
+.textAlignCenter {
+    text-align: center;
+}
+/* .bgParent {
+    position: relative;
+    height: auto;
+    min-height: 700px;
+    justify-content: center;
+    display: flex;
+}
+.spaceBg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+} */
+.bgParent {
+    position: relative;
+    height: auto;
+    min-height: 660px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+}
+.spaceBg {
+    width: 100%;
+    /* height: 100%; */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -70%;
+    left: 0;
+    right: 0;
+    /* z-index: -1; */
+    /* padding-top: 72%; */
+    /* padding: 100%; */
+    height: 1160px;
+}
+.container {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; */
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    z-index: 1;
+}
+.oneTitleText {
+    font-size: 30px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0px;
+}
+.sectionOne {
+    padding: 61px 67px 60px 69px;
+    border-radius: 15px;
+    background-color: #14222f;
+    text-align: center;
+}
+.sectionOneSubTitle {
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.sectionOneDescText {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.displayGridOne {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 18px;
+}
+.sectionOneImg {
+    width: 100%;
+    max-width: 140px;
+}
+.sectionOneTwoImg {
+    width: 100%;
+    max-width: 152px;
+}
+.sectionOneThreeImg {
+    width: 100%;
+    max-width: 96px;
+}
+.btnPrimary {
+    border-color: #f56e9f;
+    background-color: #f56e9f;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px !important;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding: 10px 39px;
+    border-radius: 25px;
+}
+.btnPrimary:hover,
+.btnPrimary:focus,
+.btnPrimary:active,
+.btnPrimary:active:hover,
+.btnPrimary:active:focus {
+    border-color: #f64e70;
+    background-color: #f64e70;
+    color: #fff;
+}
+.threeBg {
+    position: relative;
+    height: auto;
+    min-height: 600px;
+    z-index: 0;
+}
+.threeBgImage {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.siteColor {
+    color: #ffc984 !important;
+}
+.paddingTop {
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+.threeSubTitle {
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffc984;
+}
+.bgParentColor {
+    position: relative;
+}
+.bgParentColor:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    z-index: 1;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.displayGridThree {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 14px;
+    text-align: center;
+}
+.threeSection {
+    position: relative;
+    z-index: 2;
+}
+.threeIcons {
+    width: 80px;
+    height: 90px;
+}
+.fontBold {
+    font-weight: 800;
+}
+.normalTextColor {
+    color: #131313 !important;
+}
+.tableTitle {
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #131313;
+}
+.tablePriceText {
+    font-size: 14px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: #131313;
+    padding-left: 0px !important;
+}
+.noBorder {
+    border: 0px !important;
+}
+.sectionFourContainer {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+.tableBorder {
+    border-bottom: 1px solid #e6e6e6;
+}
+.tableTopBorder {
+    border-top: 1px solid #e6e6e6;
+}
+.twofooterSection {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.fourBg {
+    position: relative;
+    height: auto;
+    min-height: 400px;
+}
+.fourOne {
+    background-color: #14222f;
+    height: 300px;
+    width: 276px;
+    margin: 0 auto;
+    margin-bottom: 30px !important;
+    padding: 28.3px 23px 47.7px;
+    border-radius: 15px;
+}
+.fourGrid {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 33% 33% 33%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.fourSpaceBg {
+    top: -50%;
+    height: 1275px;
+}
+.afterBg {
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+.descriptionSection {
+    width: 152px;
+    height: 41px;
+    padding: 13px 38px 12px 24px;
+    border-radius: 2px;
+    background-color: #f56e9f;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin: 0 auto 0 auto;
+    display: inline-block;
+  }
+  .descriptionSection::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    right: 0px;
+    top: 28px;
+    height: 0px;
+    width: 0px;
+    -ms-transform: rotate(180deg);
+    transform: rotate(270deg);
+    z-index: -1;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 22px solid #e9417e;
+  }
+  .positionRelative {
+      position: relative;
+      z-index: 3;
+  }
+  .displayInlineBlock {
+      position: relative;
+      display: inline-block;
+  }
+  .faqTitle {
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #131313;
+    margin: 0 0 18px 0;
+  }
+  .faqDesc {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #131313;
+    margin: 0px;
+  }
+  .horizaldalSection {
+      margin: 30px 0px !important;
+      width: 100%;
+      max-width: 415px
+  }
+  .faqWidth {
+    width: 100%;
+    max-width: 415px
+  }
+  .faqPadding {
+      padding: 140px 0px 60px;
+  }
+  .howItThree {
+    height: 276px;
+    margin: 32px 20px 24.8px 1px;
+    padding: 83px 84px 81.8px 83px;
+    border-radius: 15px;
+    background-color: #14222f;
+  }
+  .afterBgThree {
+    top: 26%;
+    left: 26px;
+  }
+  .threeAboutBg {
+    height: 1260px;
+    top: -79%;
+  }
+  .afterBgSecond {
+    top: 23%;
+    left: 72px;
+  }
+.tickImgeMargin {
+    margin-right: 8px;
+}
+.tickTabelCell {
+    display: table-cell;
+}
+@media (max-width:991px) and (min-width: 768px) {
+    .titleText {
+        font-size: 50px;
+    }
+    .titleSubText {
+        font-size: 24px;
+    }
+    .sectionOne {
+        padding: 50px 40px 50px 40px;
+        height: 276px;
+    }
+    .displayGridThree {
+        grid-template-columns: 48% 48%;
+        grid-gap: 14px;
+    }
+    .fourOne {
+        width: auto;
+        margin: 0 15px;
+    }
+    .fourGrid {
+        grid-template-columns: 50% 50%;
+    }
+    .fourSpaceBg{
+        top: -43%;
+        height: 1700px;
+    }
+    .displayInlineBlock img {
+        width: 100%;
+    }
+    .sectionFourContainer {
+        padding: 60px 0px;
+    }
+    .displayGridOne {
+        grid-template-columns: 31% 31% 31%;
+        grid-gap: 25px;
+    }
+    .howItThree {
+        margin: 0;
+        padding: 60px 44px 60px 44px;
+    }
+    .faqPadding {
+        padding: 100px 0px 60px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .displayGridThree {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+        margin-bottom: 24px;
+    }
+    .displayGridOne {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+        margin-bottom: 24px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .titleText {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+    .titleSubText {
+        font-size: 24px;
+    }
+    .spaceBg {
+        top: -16%;
+        height: 1550px;
+    }
+    .displayInlineBlock img {
+        width: 100%;
+        max-width: 600px;
+    }
+    .afterBg {
+        left: 5%;
+        top: 40%;
+    }
+    .fourGrid {
+        grid-gap: 0;
+        grid-template-columns: 100%;
+    }
+    .fourSpaceBg {
+        top: -8% !important;
+        height: 2375px !important;
+    }
+    .afterBgSecond {
+        top: 20% !important;
+    }
+    .paddingTop {
+        padding-top: 140px;
+        padding-bottom: 60px;
+    }
+    .faqWidth {
+        max-width: 100%;
+    }
+    .horizaldalSection {
+        max-width: 100%;
+    }
+    .afterBgThree {
+        top: 26%;
+        left: 26px;
+    }
+    .threeAboutBg {
+        height: 1750px ;
+        top: -8%;
+    }
+}

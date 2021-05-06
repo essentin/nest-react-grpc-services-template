@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# TODO uncomment `lint-staged` after cleaning up legacy code 
+# npx lint-staged
+ 

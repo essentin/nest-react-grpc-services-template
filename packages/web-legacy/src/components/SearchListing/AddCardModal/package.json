@@ -1,0 +1,6 @@
+{
+  "name": "AddCardModal",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AddCardModal.js"
+}

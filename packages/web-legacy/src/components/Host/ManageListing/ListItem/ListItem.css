@@ -1,0 +1,208 @@
+@import '../common.css';
+.leanProgressContainer {
+  height: 5px;
+  background-color: #dfdfdf;
+  margin-bottom: 0px;
+  border-radius: 0;
+}
+.leanProgressBar {
+  height: 5px !important;
+  background-color: #f56e9f;
+  box-shadow: 0px 0px 4px 0px #e20934c7;
+  color: #fff;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  line-height: 31px;
+  text-align: center;
+  transition: width 0.6s ease 0s;
+  width: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.landingStep {
+  font-size: 14px;
+  color: #3a3a3a;
+  margin-top: 13px;
+  display: inline-block;
+}
+.listContent {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1b1c;
+  display: inline-block;
+  margin-top: 10px;
+}
+.noPadding {
+  padding: 0px;
+}
+.labelText {
+  font-size: 14px;
+  color: #3a3a3a;
+  font-weight: normal;
+  line-height: 1.43;
+}
+.listPhotoCover {
+  display: block;
+  backface-visibility: hidden;
+  position: relative;
+  vertical-align: bottom;
+  overflow: hidden;
+  background-color: #d0d0d0;
+  text-align: center;
+}
+.listPhotoMedia {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+.imgResponsive {
+  height: 100%;
+  width: 100%;
+}
+.listDetailContent {
+  position: relative;
+}
+.panelBody {
+  margin: 0;
+  padding: 15px 0px;
+  position: relative;
+  border-bottom: none;
+  background: #fff;
+  padding: 15px;
+  margin-top: 36px;
+  border-radius: 0px;
+  box-shadow: 0px 0px 20px 1.5px #eeebeb;
+}
+.panelBody:last-child {
+  border-bottom: 0px;
+}
+.iconRemove {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  color: #bbbbbb;
+  display: block;
+}
+.icon {
+  font-weight: normal;
+  line-height: 1;
+  cursor: pointer;
+}
+.panelBodyAlert {
+  margin: 0;
+  padding: 15px 0px;
+  padding-top: 0px;
+  position: relative;
+  border-bottom: 1px solid #d0d0d0;
+}
+.alertBlock {
+  text-align: left;
+  padding: 25px;
+  background-color: #c2e4e7;
+  position: relative;
+  border-radius: 0px;
+  overflow: hidden;
+}
+.h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.alertText {
+  font-size: 14px;
+  color: #1a1b1c;
+  line-height: 1.43;
+}
+.space2 {
+  margin-bottom: 12px;
+}
+.formSelect {
+  height: 36px;
+  margin-left: 1em;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #1a1b1c;
+  font-weight: 500;
+  vertical-align: bottom;
+  border-radius: 0px;
+  padding: 8px 30px 8px 8px;
+  background-size: 25px 17px !important;
+}
+.textOverFlow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.formSelectNew {
+  margin-left: 0px !important;
+  margin-top: 12px;
+}
+.displayInlineBlock {
+  display: inline-block;
+}
+.progressWidth {
+  display: inline-block;
+  width: 80%;
+  vertical-align: middle;
+  padding-right: 24px;
+}
+.progresTextWidth {
+  display: inline-block;
+  width: 20%;
+  vertical-align: middle;
+}
+.editButtoncss {
+  display: inline-block;
+}
+.btnPrimary {
+  border-color: #f56e9f;
+  background-color: transparent;
+  color: #f56e9f;
+  border-radius: 0;
+}
+.floatRight {
+  float: right;
+}
+@media screen and (max-width: 1024px) {
+  .iconRemove {
+    position: relative;
+    display: block;
+    right: unset;
+  }
+}
+@media screen and (max-width: 767px) {
+  .progressWidth {
+    width: 72%;
+  }
+  .progresTextWidth {
+    width: 28%;
+  }
+  .formSelect {
+    margin-top: 18px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .floatRight {
+    margin: 15px 0px 0px 0px;
+  }
+  .leanProgressBar {
+    max-width: 100%;
+  }
+  .listContent {
+    margin-top: 0px;
+  }
+  .landingStep {
+    margin-top: 0;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .leanProgressBar {
+    max-width: 100%;
+  }
+}

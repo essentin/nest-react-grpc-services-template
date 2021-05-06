@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="109" height="112" viewBox="0 0 109 112">
+    <defs>
+        <filter id="9xa7l4dw6a">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g filter="url(#9xa7l4dw6a)" transform="translate(-373 -1358)">
+            <g fill="#000" fill-rule="nonzero">
+                <path d="M.626 103.23H108.375V109.834H.626zM21.828 30.239H42.683V36.843H21.828zM21.828 48.661H42.683V55.265H21.828zM21.828 66.735H42.683V73.339H21.828zM66.318 30.239H87.173V36.843H66.318zM66.318 48.661H87.173V55.265H66.318zM66.318 66.735H87.173V73.339H66.318z" transform="translate(373 1358)"/>
+                <path d="M66.665 110.182h-24.33V78.9h24.33v31.282zm-17.379-6.952h10.775V85.156H49.286v18.074z" transform="translate(373 1358)"/>
+                <path d="M84.044 110.182h-24.33V86.547h24.33v23.635zm-17.379-6.952H77.44V93.15H66.665v10.08zM49.286 110.182h-24.33V86.547h24.33v23.635zM31.56 103.23h10.775V93.15H31.56v10.08z" transform="translate(373 1358)"/>
+                <path d="M101.77 110.182H7.23V1.042L54.5 15.642l47.27-14.598v109.139zm-87.936-6.952h80.985V10.08L54.5 22.592 13.834 10.08v93.15z" transform="translate(373 1358)"/>
+                <path d="M51.024 19.117H57.628V82.028H51.024z" transform="translate(373 1358)"/>
+            </g>
+        </g>
+    </g>
+</svg>

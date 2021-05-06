@@ -1,0 +1,16 @@
+query getCardDetails {
+  getCardDetails {
+    id
+    userId
+    customerId
+    paymentMethodId
+    last4Digits
+    default
+    isVerified
+    cardUserName
+    cardType
+    expiryDate
+    status
+    errorMessage
+  }
+}

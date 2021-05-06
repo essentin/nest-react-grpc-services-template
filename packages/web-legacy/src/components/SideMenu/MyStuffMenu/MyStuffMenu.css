@@ -1,0 +1,95 @@
+@import '../../variables.css';
+.menuHeadSection {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dedede;
+    position: fixed;
+    top: 0;
+    left: 87px;
+    right: 0;
+    max-width: 400px;
+    height: 100vh;
+    padding: 25px;
+    z-index: 3;
+}
+.Line {
+    border: 1px solid var(--border-color);
+    list-style: none;
+    border-right: 0;
+    border-left: 0;
+    position: relative;
+}
+.linkText, .linkText:hover {
+    display: inline-block;
+    text-align: left;
+    line-height: 48px;
+    font-size: 16px;
+    color: #131313;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+.ulSection {
+    padding: 80px 0 0;
+    margin: 0;
+    height: 100%;
+}
+.textCenter {
+    text-align: center !important;
+}
+.signOutMargin {
+    margin-bottom: 260px
+}
+.listText {
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.userText {
+    position: absolute;
+    right: 10px;
+}
+.textAlignRight {
+    text-align: right;
+    cursor: pointer;
+}
+.myStuffBtn, .myStuffBtn:hover, .myStuffBtn:focus {
+    border: none;
+    font-size: 16px;
+    color: #131313;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 35px;
+    outline: none;
+    background: transparent !important;
+}
+.noBorderBottom {
+    border-bottom: none !important;
+}
+.inviteMarginLeft {
+    margin-left: 10px;
+}
+@media screen and (max-width: 1199px) {
+    .menuHeadSection {
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: scroll;
+    }
+    .signOutMargin {
+        margin-bottom: 220px;
+    }
+    .ulSection {
+        padding: 100px 0 0;
+        margin: 0;
+        height: 800px;
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 767px) {
+    .signOutMargin {
+        margin-bottom: 60px;
+    }
+}

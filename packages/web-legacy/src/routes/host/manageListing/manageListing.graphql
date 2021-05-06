@@ -1,0 +1,27 @@
+query ManageListings{
+    ManageListings {
+        id
+        title
+        city
+        updatedAt
+        coverPhoto
+        isPublished
+        isReady
+        listPhotos{
+            id
+            name
+        }
+        listingSteps {
+            id
+            step1
+            step2
+            step3
+            step4
+        }
+        user{
+             id
+          	email
+            userBanStatus
+        }
+    }
+  }

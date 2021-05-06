@@ -1,0 +1,20 @@
+query getAllCancellation{
+  getAllCancellation {
+    id
+    policyName
+    priorDays
+    accommodationPriorCheckIn
+    accommodationBeforeCheckIn
+    accommodationDuringCheckIn
+    guestFeePriorCheckIn
+    guestFeeBeforeCheckIn
+    guestFeeDuringCheckIn
+    hostFeePriorCheckIn
+    hostFeeBeforeCheckIn
+    hostFeeDuringCheckIn
+    isEnable
+    subTitle
+    subContent
+    image
+  }
+}

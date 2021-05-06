@@ -1,0 +1,159 @@
+@import '../../components/variables.css';
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.container {
+  margin: 0 auto;
+  padding: 0px 0 40px;
+  max-width: 450px;
+  border: 1px solid #e6e6e6;
+}
+.lead {
+  font-size: 1.25em;
+}
+.lineThrough {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 12px 0px;
+  width: 100%;
+  color: #3a3a3a;
+  text-align: center;
+  font-size: 14px;
+}
+.lineThrough::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  margin-top: -5px;
+  margin-left: -20px;
+  width: 40px;
+  height: 10px;
+  background-color: #fff;
+  content: '';
+}
+.lineThrough::after {
+  position: absolute;
+  top: 49%;
+  z-index: -2;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  content: '';
+}
+.horizontalLineThrough {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 15px 0px;
+  width: 100%;
+  color: #3a3a3a;
+  text-align: center;
+  font-size: 14px;
+}
+.formGroup {
+  margin-bottom: 6px;
+}
+.formSection {
+  overflow: hidden;
+}
+.noPadding {
+  padding: 0px;
+}
+.textAlignRight {
+  text-align: right;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.modalCaptionLink {
+  color: #00A098;
+  cursor: pointer;
+}
+.modalCaptionLinkLarge {
+  font-size: 16px;
+  line-height: 32px;
+}
+.modalCaptionLink:hover,
+.modalCaptionLink:focus {
+  color: #00A098;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px 16px;
+  width: 100%;
+  outline: 0;
+  border: 1px solid #373277;
+  border-radius: 0px;
+  background: #373277;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.3333333;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgba(54, 50, 119, 0.8);
+  text-decoration: none;
+}
+.button:focus {
+  border-color: #0074c2;
+  box-shadow: 0 0 8px rgba(0, 116, 194, 0.6);
+  text-decoration: none;
+}
+.btnPrimary {
+  border-color: #f56e9f;
+  background-color: #f56e9f;
+  color: #fff;
+  border-radius: 0px;
+}
+.btnPrimary:hover,
+.btnPrimary:focus {
+  border-color: #f64e70;
+  background-color: #f64e70;
+  color: #fff;
+}
+.btnPrimaryBorder {
+  border-color: #f56e9f;
+  color: #f56e9f;
+  background-color: #fff;
+  border-radius: 0px;
+}
+.btnPrimaryBorder:hover,
+.btnPrimaryBorder:focus {
+  border-color: #f64e70;
+  color: #f64e70;
+  background-color: #fff;
+}
+.btnSmall {
+  padding: 5px 0px;
+}
+.titleText {
+  font-size: 30px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #131313;
+  padding: 0 30px;
+}
+.socialPadding {
+  padding: 0 30px;
+}
+@media screen and (max-width: 767px) {
+  .socialPadding {
+    padding: 0 15px;
+  }
+  .titleText {
+    padding: 0 15px;
+  }
+}

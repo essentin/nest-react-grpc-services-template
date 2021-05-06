@@ -1,0 +1,92 @@
+@import '../../components/variables.css';
+@import '../../components/utils.css';
+@import '../../components/UserRegisterForm/StepTwo/StepTwo.css';
+@import '../../components/UserRegisterForm/StepThree/StepThree.css';
+
+.textAlignCenter {
+  text-align: center;
+}
+.formControlSelect {
+  padding: 10px 32px 10px 10px;
+  height: 40px;
+  border-radius: 0px;
+  font-size: 14px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  color: #1a1b1c;
+  font-weight: normal;
+  border: 0px !important;
+  border-bottom: 1px solid #e6e6e6 !important;
+  background-color: #f9f9f9;
+}
+.labelText {
+  font-size: 14px;
+  color: #3a3a3a;
+  margin: 6px 0px;
+  line-height: 1.43;
+  font-weight: normal;
+}
+.spaceTop3 {
+  margin-top: 18px;
+}
+.inputMainSection {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 100px;
+  padding-bottom: 48px;
+  margin-top: 80px;
+  width: 100%;
+  max-width: 650px;
+}
+.backgroundEmail {
+  background-position: 100% 14px !important;
+}
+.backgroundTwo {
+  background-position: 100% 50% !important;
+}
+.backgroundCompany {
+  background-position: 100% 7px !important;
+}
+.btnPadding {
+  padding: 0 26px 0px 26px !important;
+}
+.margintop15 {
+  margin-top: 15px;
+}
+.addonStyle {
+  border-color: #e6e6e6 !important;
+}
+.widthredcd {
+  max-width: 280px;
+}
+.firstNamePadding {
+  padding: 0 15px 0px 26px;
+}
+.myProfileTitle {
+  font-size: 30px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: normal;
+  color: #131313;
+  padding: 30px 26px 26px 26px;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0;;
+}
+.profileUploadText {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 40px !important;
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .formControlSelect {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .formControlSelect {
+    width: 100%;
+  }
+}

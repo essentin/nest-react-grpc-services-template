@@ -1,0 +1,1 @@
+{"version":3,"file":"package-json-loader.js","sourceRoot":"","sources":["package-json-loader.ts"],"names":[],"mappings":";;;AAAA,+BAA+B;AAC/B,6BAA6B;AAE7B,MAAa,iBAAiB;IAE1B,KAAK,CAAC,yBAAyB;QAC5B,OAAO,MAAM,EAAE,CAAC,QAAQ,CAAC,IAAI,CAAC,IAAI,CAAC,cAAc,CAAC,CAAC,CAAC;IACvD,CAAC;IAED,eAAe,CAAC,UAAkB;IAElC,CAAC;IAED,mBAAmB,CAAC,UAAkB;IAEtC,CAAC;CACJ;AAbD,8CAaC"}

@@ -1,0 +1,314 @@
+@import '../../components/variables.css';
+@import '../../components/utils.css';
+@import '../../components/common.css';
+.noBorder {
+  border: 0px none !important;
+}
+.rowBorder {
+  border-bottom: 1px solid #dce0e0;
+}
+.panelHeader {
+  border-radius: 0;
+  width: 100%;
+  display: block;
+  color: #1a1b1c;
+  font-size: 16px;
+  border-bottom: 1px solid #dce0e0;
+}
+.panelBody {
+  margin: 0;
+  position: relative;
+}
+.textTruncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.sectionTitleLight {
+  color: #1a1b1c;
+  font-size: 14px;
+}
+.textMuted {
+  color: #3a3a3a;
+}
+.labelText {
+  font-size: 14px;
+  color: #3a3a3a;
+  font-weight: normal;
+}
+.textSpace {
+  margin-left: 10px;
+  color: #f56e9f;
+}
+.textSpace:hover {
+  color: #f56e9f;
+}
+.radioText {
+  font-size: 14px;
+  color: #1a1b1c;
+  font-weight: normal;
+  display: inline;
+  padding-right: 5px;
+}
+.formControlSelect {
+  padding: 8px 8px 10px 10px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #1a1b1c;
+  font-weight: normal;
+  line-height: 24px;
+  display: block;
+  overflow: hidden;
+  appearance: none;
+  background-position: 99% 7px !important;
+}
+.formControlInput {
+  display: block;
+  padding: 10px 35px 10px 10px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #1a1b1c;
+  font-weight: normal;
+}
+.formGroup {
+  margin-bottom: 6px;
+}
+/*************************Panel Styles End******************************************/
+a {
+  color: #00A098;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #00A098;
+  cursor: pointer;
+  text-decoration: none;
+}
+.miniDivider {
+  width: 0;
+  border-left: 2px solid #dce0e0;
+  height: 1em;
+  margin: 0 15px;
+}
+.button {
+  border-color: #f64e70;
+  background-color: #f64e70;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  white-space: normal;
+}
+.button:hover {
+  background: rgba(54, 50, 119, 0.8);
+}
+.button:focus {
+  border-color: #0074c2;
+  box-shadow: 0 0 8px rgba(0, 116, 194, 0.6);
+}
+.btnPrimary {
+  border-color: #f56e9f;
+  background-color: #f56e9f;
+  color: #fff;
+  border-radius: 50px;
+}
+.btnlarge {
+  padding: 7px 21px;
+}
+.btnPrimary:hover,
+.btnPrimary:focus,
+.btnPrimary:active,
+.btnPrimary:active:hover,
+.btnPrimary:active:focus {
+  border-color: #f64e70 !important;
+  background-color: #f64e70 !important;
+  color: #fff;
+}
+.btnPrimaryBorder {
+  border-color: #f56e9f;
+  color: #f56e9f;
+  background-color: #fff;
+  border-radius: 0px;
+}
+.btnPrimaryBorder:hover,
+.btnPrimaryBorder:focus,
+.btnPrimaryBorder:active,
+.btnPrimaryBorder:active:hover,
+.btnPrimaryBorder:active:focus {
+  border-color: #f64e70;
+  color: #f64e70;
+  background-color: #fff;
+}
+.space1 {
+  margin-bottom: 6px;
+}
+.space2 {
+  margin-bottom: 12px;
+}
+.space4 {
+  margin-bottom: 24px;
+}
+.btnRight {
+  margin-right: 10px;
+}
+.TableTitleText {
+  font-size: 16px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #131313;
+}
+.cardDetailText {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #131313;
+}
+.textAlignRight {
+  text-align: right;
+}
+.cardImg {
+  margin-right: 5px;
+}
+.trashImg {
+  margin-left: 10px;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+.setDefaultSection {
+  font-size: 14px !important;
+  border-right: 1px solid #dce0e0;
+  border-left:  1px solid #dce0e0;
+  padding: 10px 18px;
+  max-width: 163px;
+  display: inline-block;
+  min-width: 163px;
+  text-align: center;
+}
+.removeText {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #131313;
+  padding: 10px 0px 10px 18px;
+}
+.addCardPadding {
+  padding: 9px 30px;
+}
+.paymentTitleText {
+  font-size: 30px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.53;
+  letter-spacing: normal;
+  color: #131313;
+}
+.defaultBtn {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  background-color: #00a098;
+  padding: 6px 18px 4px;
+  border-radius: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: not-allowed;
+}
+.removeWidth {
+  width: 10%;
+}
+.defaultWidth {
+  width: 15%;
+}
+.cardListSection {
+  padding-left: 15px;
+}
+.setDeafutOverFlow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+@media screen and (max-width: 743px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+  .textMuted {
+    display: block;
+    padding-top: 5px;
+  }
+}
+.displayInline {
+  display: inline-block;
+}
+.displayFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.responsiveTextAlign {
+  text-align: right;
+}
+.inputFormControl {
+  padding: 10px 35px 10px 10px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #1a1b1c;
+  font-weight: normal;
+}
+.selectFormControl {
+  padding: 8px 32px 10px 10px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #1a1b1c;
+  font-weight: normal;
+}
+@media (max-width: 991px) {
+  .responsiveTextAlign {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .responsivePadding {
+    padding: 0px !important;
+  }
+}
+.infoBox {
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #3a3a3a;
+  margin: 0 auto;
+  width: 100%;
+  float: left;
+}
+.transparentText {
+  color: transparent !important;
+}

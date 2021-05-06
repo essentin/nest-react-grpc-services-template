@@ -1,5 +1,8 @@
 /* eslint-disable */
-export const protobufPackage = "google.protobuf";
+import { util, configure } from 'protobufjs/minimal';
+import * as Long from 'long';
+
+export const protobufPackage = 'google.protobuf';
 
 /**
  * A Timestamp represents a point in time independent of any time zone or local
@@ -110,4 +113,11 @@ export interface Timestamp {
   nanos: number;
 }
 
-export const GOOGLE_PROTOBUF_PACKAGE_NAME = "google.protobuf";
+export const GOOGLE_PROTOBUF_PACKAGE_NAME = 'google.protobuf';
+
+// If you get a compile-error about 'Constructor<Long> and ... have no overlap',
+// add '--ts_proto_opt=esModuleInterop=true' as a flag when calling 'protoc'.
+if (util.Long !== Long) {
+  util.Long = Long as any;
+  configure();
+}

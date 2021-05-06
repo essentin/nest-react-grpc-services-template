@@ -1,0 +1,92 @@
+@import '../utils.css';
+
+.container {
+    margin: 0px auto;
+    padding-top: 70px;
+    max-width: 1170px;
+    padding-bottom: 70px;
+}
+.button {
+    font-weight: 500;
+    line-height: 1.43;
+    height: 22px;
+    padding: 1px 15.5px;
+    border-radius: 30.5px;
+    background-color: #f56e9f !important;
+    display: inline-block
+  }
+.btnPrimary {
+    border-color: #f56e9f !important;
+    background-color: #f56e9f !important;
+    color: #fff !important;
+    border-radius: 50px;
+    box-shadow: none !important;
+}
+.btnPrimary:hover,
+.btnPrimary:focus,
+.btnPrimary:active,
+.btnPrimary:active:hover,
+.btnPrimary:active:focus {
+  border-color: #f56e9f !important;
+  background-color: #f56e9f !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.displayGrid {
+    display: grid;
+    grid-template-columns: 82% 18%;
+    border: 1px solid #e6e6e6;
+    align-items: center;
+    border-right: 0;
+    border-left: 0;
+}
+.noMargin {
+    margin: 0px;
+}
+.textAlignRight {
+    text-align: right;
+}
+.formControlInput {
+  display: block;
+  padding: 10px 35px 10px 50px;
+  height: 40px;
+  font-size: 16px;
+  border: 0;
+  background-color: #fff;
+  color: #1a1b1c;
+  font-weight: normal;
+  border-right: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+  box-shadow: none;
+}
+.labelTitle {
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #131313;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+.backgroundOne {
+    background: url('../../../public/NewIcon/lock.svg') no-repeat;
+    background-position: 2% 10px;
+}
+.formControlInput:focus {
+    box-shadow: none !important;
+    border-color: #e6e6e6 !important;
+}
+.changePadding {
+    padding: 0px 6px;
+}
+@media screen and (max-width: 767px) {
+    .scrollScetion {
+      width: 850px;
+      margin-bottom: 15px;
+    }
+  }
+.pullRight {
+    float: right;
+  }

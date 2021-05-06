@@ -1,0 +1,18 @@
+query GetAllUserInvitation {
+  getAllUserInvitation {
+    status
+    errorMessage
+    results {
+      id
+      userId
+      email
+      status
+      inviteCode
+      invitedAt
+      registeredAt
+      cancelledAt
+      registeredEmail
+    }
+    count
+  }
+}

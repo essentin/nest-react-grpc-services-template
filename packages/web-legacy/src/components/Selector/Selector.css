@@ -1,0 +1,106 @@
+@import '../variables.css';
+
+.container {
+  padding: 5px;
+}
+.navItemSmall {
+  text-align: center;
+}
+.navItem {
+  height: 30px;
+  border: 0;
+  border-radius: 15px;
+  font-family: Catamaran;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #131313;
+  margin-left: 4px;
+  margin-right: 4px;
+  background-color: #f9f9f9;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  background-image: none;
+  padding: 6px 12px;
+  line-height: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.active {
+  border-radius: 15px;
+  color: #ffffff !important;
+  font-weight: bold;
+  padding:  6px 12px;
+  background-color: #00a098 !important;
+}
+.alignRight {
+  text-align: right;
+}
+.label {
+  margin-right: 10px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #131313;
+  vertical-align: middle;
+  margin-bottom: 0;
+  line-height: 21px;
+}
+.displayInlineBlock {
+  display: inline-block;
+}
+.monthsText {
+  text-transform: capitalize;
+  line-height: 26px;
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .navItem {
+    padding: 6px 7px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .label {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 19px;
+  }
+  .alignRight {
+    text-align: center;
+  }
+  .navItem {
+    padding: 6px 8px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .container {
+    padding: 5px 0px 5px 15px;
+  }
+  .mobileDisplayFlex {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .monthsText {
+    position: relative;
+    top: 2px;
+  }
+}

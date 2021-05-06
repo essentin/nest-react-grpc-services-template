@@ -1,0 +1,122 @@
+@import '../../utils.css';
+
+/** RentAll - Begin **/
+.formGroup {
+  margin-bottom: 30px !important;
+}
+.formControlInput {
+  padding: 10px 35px 10px 10px;
+  height: 40px;
+  border-radius: 0px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #1a1b1c;
+  font-weight: normal;
+}
+.inputPaddingTop {
+  padding-top: 5px;
+}
+.space3 {
+  margin-bottom: 18px;
+}
+.labelText {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #131313;
+}
+.btnPrimary {
+  border-color: #f56e9f;
+  background-color: #f56e9f;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding: 8px 30px;
+}
+.btnPrimary:hover,
+.btnPrimary:focus,
+.btnPrimary:disabled:hover,
+.btnPrimary:disabled:focus {
+  border-color: #f64e70 !important;
+  background-color: #f64e70 !important;
+  color: #fff !important;
+}
+.logInModalBody {
+  padding: 24px 30px 30px; 
+}
+.modalCaptionLink {
+  padding: 7px 30px;
+  border-radius: 30.5px;
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000 !important;
+  text-decoration: none !important;
+  display: inline-block;
+}
+.descText {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #131313;
+}
+.verifyBtn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+.textAlignRight {
+  text-align: right;
+}
+.inputSection {
+  padding-left: 15px !important;
+  color: #131313 !important;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 40px;
+  padding-top: 12px;
+}
+.displayGrid {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  border-right: 0px;
+  border-left: 0px;
+}
+.codeText {
+  padding: 15px 0;
+  border-right: 1px solid #dedede;
+}
+@media screen and (max-width: 767px) {
+  .inputSection {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .displayGrid {
+    grid-template-columns: 63% 37%;
+  }
+  .codeTextmobile {
+    font-size: 14px !important;
+  }
+}

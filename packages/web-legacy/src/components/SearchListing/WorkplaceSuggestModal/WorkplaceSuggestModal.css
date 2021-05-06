@@ -1,0 +1,73 @@
+@import '../../variables.css';
+@import '../../utils.css';
+@import '../../helpers.css';
+
+/** RentAll - Begin **/
+.formControlInput {
+  padding: 0px 35px 0px 2px;
+  height: 34px;
+  border-radius: 0px;
+  font-size: 16px;
+  border: 0 !important;
+  box-shadow: none !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #00a098;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.btnPrimary {
+  border-color: #f56e9f;
+  background-color: #f56e9f;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  width: 100%;
+  padding: 8px 20px;
+}
+.btnPrimary:hover,
+.btnPrimary:focus {
+  border-color: #f64e70 !important;
+  background-color: #f64e70 !important;
+  color: #fff;
+}
+.horizontalLineThrough {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0px 0px 10px; 
+  width: 100%;
+  color: #3a3a3a;
+  text-align: center;
+  font-size: 14px;
+}
+.labelText {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #131313;
+  margin: 0;
+}
+.backgroundOne {
+  background: url('../../../../public/NewIcon/workspace.svg') no-repeat;
+  background-position: 100% 10px;
+}
+.backgroundTwo {
+  background: url('../../../../public/NewIcon/ic-city.svg') no-repeat;
+  background-position: 100% 8px;
+}
+.mainPadding {
+  padding: 0px 30px;
+}

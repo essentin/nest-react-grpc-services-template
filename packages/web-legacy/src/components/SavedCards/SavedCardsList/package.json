@@ -1,0 +1,6 @@
+{
+  "name": "SavedCardsList",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SavedCardsList.js"
+}

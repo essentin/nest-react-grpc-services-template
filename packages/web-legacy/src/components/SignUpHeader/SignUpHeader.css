@@ -1,0 +1,30 @@
+.bgImage {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 6%;
+    margin-bottom: 60px;
+}
+.logoSection {
+    background-color: #222d3a;
+    padding: 45px 50px 0;
+}
+.logoImage {
+    width: 100%;
+    object-fit: contain;
+    max-width: 180px;
+}
+
+@media screen and (max-width: 767px) {
+    .bgImage {
+        margin-bottom: 0px;
+        padding-top: 5%;
+    }
+    .logoSection {
+        background-color: #222d3a;
+        padding: 18px 50px 0;
+        text-align: center;
+    } 
+}

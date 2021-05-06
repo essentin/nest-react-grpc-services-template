@@ -1,0 +1,18 @@
+query($listId: Int, $guestId: String) {
+  checkForReservation(listId:$listId, guestId:$guestId){
+    status
+    errorMessage
+    result {
+      listId
+      confirmationCode
+      listData {
+        title
+      }
+      activityType
+      checkIn
+      guestData {
+        displayName
+      }
+    }
+  }
+}

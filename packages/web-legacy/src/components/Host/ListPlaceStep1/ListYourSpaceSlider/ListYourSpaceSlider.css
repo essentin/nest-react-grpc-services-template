@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.displayGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.svgImage img {
+  width: 100%;
+  max-width: 500px;
+}
+.content h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  padding-top: 175px;
+}
+.fontWeight {
+  font-weight: 500;
+}
+.minHeight {
+  height: 100%;
+  max-height: 450px;
+  position: relative;
+}
+.landingContentTitle {
+  font-size: 24px;
+  color: #1a1b1c;
+  margin: 0px 0px 18px 0px;
+  position: absolute;
+  top: 80px;
+  font-weight: 500;
+}
+.landingContentTitle::after {
+  content: '';
+  width: 37px;
+  height: 2px;
+  border-radius: 0px;
+  background: #f56e9f;
+  left: 2px;
+  right: 0;
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+}
+.skipButton a {
+  color: #f56e9f;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+.skipButton {
+  position: relative;
+  z-index: 2;
+  width: 100px;
+}
+.skipButton a::before {
+  content: '';
+  width: 10px;
+  height: 1.5px;
+  background: #f56e9f;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.buttonPosition {
+  position: absolute;
+  bottom: 119px;
+}
+.buttonrelative {
+  position: relative;
+  width: 325px;
+}
+.listPrevArrow {
+  width: 50px;
+  height: 50px;
+  background: #ffffff !important;
+  box-shadow: 0px 0px 9px 3px #eeebeb !important;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 0;
+}
+.listNextArrow {
+  width: 50px;
+  height: 50px;
+  background: #f56e9f !important;
+  box-shadow: 0 0 0 8px #fee5ea !important;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 25px;
+  }
+  .landingContentTitle::after {
+    display: none;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .content h2 {
+    padding-top: 85px;
+  }
+  .landingContentTitle {
+    top: 70px;
+  }
+  .tabPadding {
+    padding-top: 75px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .displayGrid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .content h2 {
+    padding-top: 110px;
+    text-align: center;
+  }
+  .landingContentTitle {
+    top: 60px;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  .svgImage {
+    padding-bottom: 45px;
+  }
+  .minHeight {
+    max-height: inherit;
+  }
+  .skipButton {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .buttonPosition {
+    position: relative;
+    bottom: 75px;
+  }
+  .listPrevArrow {
+    left: 8px;
+  }
+  .buttonrelative {
+    width: 289px;
+    margin: 0 auto;
+  }
+  .svgImage img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) and (min-width: 320px) {
+  .buttonrelative {
+    width: 270px;
+    margin: 0 auto;
+  }
+}

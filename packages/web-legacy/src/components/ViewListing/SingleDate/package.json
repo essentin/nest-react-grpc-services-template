@@ -1,0 +1,6 @@
+{
+  "name": "SingleDate",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SingleDate.js"
+}
